@@ -61,6 +61,7 @@ body {
   color: var(--text);
   line-height: 1.6;
   font-size: 16px;
+  text-align: center;
 }
 
 /* Typography */
@@ -102,6 +103,7 @@ p {
   margin-bottom: var(--space-md);
   color: var(--muted);
   line-height: 1.7;
+  text-align: center;
 }
 
 a {
@@ -125,6 +127,7 @@ a:focus {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--space-md);
+  text-align: center;
 }
 
 /* Header & Navigation */
@@ -581,10 +584,11 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
+  align-items: center;
 }
 
 .two-column p {
-  text-align: left;
+  text-align: center;
   line-height: 1.7;
   margin-bottom: var(--space-md);
 }
@@ -600,15 +604,18 @@ textarea {
   list-style: none;
   margin: var(--space-lg) 0;
   padding: 0;
+  text-align: center;
 }
 
 .feature-list li {
   padding: var(--space-sm) 0;
-  padding-left: 1.75rem;
+  padding-left: 1.5rem;
   position: relative;
   color: var(--text);
   line-height: 1.7;
   margin-bottom: var(--space-sm);
+  display: inline-block;
+  text-align: left;
 }
 
 .feature-list li:before {
