@@ -332,6 +332,15 @@ section > .container > p {
   line-height: 1.7;
 }
 
+/* Force section headings and lead text to center */
+section h2,
+section h2 + p,
+section .section-lead {
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Cards Grid */
 
 .cards-grid {
