@@ -1,390 +1,173 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VBP Solutions - No Suits Required</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'vbp-blue': '#1B2B4B',
-                        'vbp-bright': '#3B9AFF',
-                        'vbp-dark': '#0E1117'
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #0E1117 0%, #1B2B4B 100%);
-        }
-        .glass-effect {
-            background: rgba(27, 43, 75, 0.3);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(59, 154, 255, 0.1);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShadowOps - Job Risk Radar for Manufacturing</title>
+  <meta name="description" content="ShadowOps turns ERP and plant-floor data into early warnings—so you know what will slip, why, and what to do next.">
+  <meta property="og:title" content="ShadowOps - Job Risk Radar for Manufacturing">
+  <meta property="og:description" content="Early risk detection for manufacturing operations">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/styles/main.css">
 </head>
-<body class="bg-vbp-dark text-white">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 glass-effect">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
-                    <h1 class="text-2xl font-bold text-vbp-bright">VBP Solutions</h1>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#problem" class="hover:text-vbp-bright transition-colors">Problem</a>
-                    <a href="#fix" class="hover:text-vbp-bright transition-colors">Fix</a>
-                    <a href="#offers" class="hover:text-vbp-bright transition-colors">Offers</a>
-                    <a href="#about" class="hover:text-vbp-bright transition-colors">About</a>
-                </div>
-                <a href="https://calendly.com/vpascetti-vbpsolutions/30min" 
-                   class="bg-vbp-bright hover:bg-blue-400 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
-                    Book a Call
-                </a>
-            </div>
-        </div>
-    </nav>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="/" class="logo">ShadowOps</a>
+        <nav>
+          <a href="/product/">Product</a>
+          <a href="/how-it-works/">How it Works</a>
+          <a href="/use-cases/">Use Cases</a>
+          <a href="/pilot/">Pilot</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/pilot/" class="btn btn-primary cta-button">Request a Pilot</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
+  <main>
     <!-- Hero Section -->
-    <section class="gradient-bg min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                I fix broken ops and automate the dumb shit—
-                <span class="text-vbp-bright">no suits required.</span>
-            </h1>
-            <p class="text-xl sm:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
-                Fixing operational messes for lean teams and scaling startups. No corporate bullshit, just systems that work.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://calendly.com/vpascetti-vbpsolutions/30min" 
-                   class="bg-vbp-bright hover:bg-blue-400 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors inline-block">
-                    Book the damn call
-                </a>
-                <a href="#problem" class="border-2 border-vbp-bright text-vbp-bright hover:bg-vbp-bright hover:text-white font-bold py-4 px-8 rounded-lg text-lg transition-all inline-block">
-                    See What's Broken
-                </a>
-            </div>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Job Risk Radar for Manufacturing</h1>
+          <p class="subhead">ShadowOps turns ERP and plant-floor data into early warnings—so you know what will slip, why, and what to do next.</p>
+          <div class="hero-buttons">
+            <a href="/pilot/" class="btn btn-primary btn-large">Request a Pilot</a>
+            <a href="/how-it-works/" class="btn btn-secondary btn-large">See How It Works</a>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Problem Section -->
-    <section id="problem" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-6">Your internal ops <span class="text-vbp-bright">suck.</span></h2>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="glass-effect p-8 rounded-xl">
-                    <h3 class="text-xl font-semibold mb-4 text-vbp-bright">• Manual invoicing</h3>
-                    <p class="text-gray-400">Still copying numbers from spreadsheet to spreadsheet, wondering why your billing is always behind.</p>
-                </div>
-
-                <div class="glass-effect p-8 rounded-xl">
-                    <h3 class="text-xl font-semibold mb-4 text-vbp-bright">• Poor onboarding</h3>
-                    <p class="text-gray-400">New hires spend their first week trying to figure out which of the 15 different logins they actually need.</p>
-                </div>
-
-                <div class="glass-effect p-8 rounded-xl">
-                    <h3 class="text-xl font-semibold mb-4 text-vbp-bright">• Tool chaos</h3>
-                    <p class="text-gray-400">You've got 23 different apps that don't talk to each other, and half your team forgot their passwords.</p>
-                </div>
-
-                <div class="glass-effect p-8 rounded-xl">
-                    <h3 class="text-xl font-semibold mb-4 text-vbp-bright">• Data disasters</h3>
-                    <p class="text-gray-400">Your reports are always outdated and nobody trusts the numbers anyway.</p>
-                </div>
-
-                <div class="glass-effect p-8 rounded-xl">
-                    <h3 class="text-xl font-semibold mb-4 text-vbp-bright">• Process bottlenecks</h3>
-                    <p class="text-gray-400">Everything requires three approvals and two meetings that could have been an email.</p>
-                </div>
-
-                <div class="glass-effect p-8 rounded-xl">
-                    <h3 class="text-xl font-semibold mb-4 text-vbp-bright">• Support nightmares</h3>
-                    <p class="text-gray-400">Customer issues bounce between five different people before anyone knows what's happening.</p>
-                </div>
-            </div>
+    <!-- Outcome Cards -->
+    <section>
+      <div class="container">
+        <h2>Three Outcomes, One Platform</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon">👁️</div>
+            <h3>See Risk Early</h3>
+            <p>Predict which jobs will slip before your team feels the pressure. ShadowOps surfaces job risk scores per work center and identifies emerging constraints before they become crises.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🔍</div>
+            <h3>Know Why</h3>
+            <p>Don't just see a late job—understand exactly why. Material shortage? Labor constraint? Machine downtime? Queue time? ShadowOps explains the root cause in plain language.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">✓</div>
+            <h3>Act with Confidence</h3>
+            <p>Get AI-powered recommendations that respect your ERP. No destructive automation—just clear suggestions, full audit trails, and accountability for every decision.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Fix Section -->
-    <section id="fix" class="py-20 px-4 sm:px-6 lg:px-8 bg-vbp-dark">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8">How I help</h2>
-            <p class="text-xl text-gray-300 leading-relaxed">
-                I build automation, systems, and SOPs that deliver real results without MBA fluff. 
-                No 47-slide decks about "digital transformation." Just working solutions that save time, 
-                reduce errors, and let your team focus on what actually grows the business. 
-                I've been fixing operational dysfunction for a decade—streamlining workflows, 
-                automating reporting, and ripping the chaos out of broken processes. 
-                While consultants are busy making frameworks, I'm building systems that fucking work.
-            </p>
-        </div>
+    <!-- Not a Replacement Section -->
+    <section style="background-color: var(--bg);">
+      <div class="container">
+        <h2>ShadowOps Is Not Your ERP</h2>
+        <p>ShadowOps sits <strong>on top of</strong> your existing ERP and plant-floor systems as a read-only intelligence layer. It doesn't replace your scheduling, planning, or MES—it enhances your decision-making with early risk signals and human-driven recommendations. You stay in control.</p>
+      </div>
     </section>
 
-    <!-- Offers Section -->
-    <section id="offers" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-6">Pick Your <span class="text-vbp-bright">Poison</span></h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                    Four ways to work together. No long-term contracts, no corporate politics, just results.
-                </p>
-            </div>
-
-            <div class="grid lg:grid-cols-2 xl:grid-cols-4 gap-8">
-                <!-- Ops Clarity Assessment -->
-                <div class="glass-effect p-8 rounded-xl relative">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-semibold mb-2">Ops Clarity Assessment</h3>
-                        <div class="text-3xl font-bold text-vbp-bright mb-2">$1.5k–$2.5k</div>
-                    </div>
-                    
-                    <p class="text-gray-300 mb-8">Flat-fee audit with quick wins. I identify what's actually broken and give you a prioritized roadmap to fix it.</p>
-                    
-                    <a href="https://calendly.com/vpascetti-vbpsolutions/30min" 
-                       class="w-full bg-transparent border-2 border-vbp-bright text-vbp-bright hover:bg-vbp-bright hover:text-white font-bold py-3 px-6 rounded-lg transition-all inline-block text-center">
-                        Let's fix your ops
-                    </a>
-                </div>
-
-                <!-- Back-Office Build-Out -->
-                <div class="glass-effect p-8 rounded-xl relative border-2 border-vbp-bright">
-                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <span class="bg-vbp-bright text-white px-4 py-1 rounded-full text-sm font-semibold">Most Popular</span>
-                    </div>
-                    
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-semibold mb-2">Back-Office Build-Out</h3>
-                        <div class="text-3xl font-bold text-vbp-bright mb-2">Custom quote</div>
-                    </div>
-                    
-                    <p class="text-gray-300 mb-8">Full operational system design. I build the automation, connect your systems, clean your data, and set up processes that actually work.</p>
-                    
-                    <a href="https://calendly.com/vpascetti-vbpsolutions/30min" 
-                       class="w-full bg-vbp-bright hover:bg-blue-400 text-white font-bold py-3 px-6 rounded-lg transition-colors inline-block text-center">
-                        Let's fix your ops
-                    </a>
-                </div>
-
-                <!-- Fractional Ops Partner -->
-                <div class="glass-effect p-8 rounded-xl relative">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-semibold mb-2">Fractional Ops Partner</h3>
-                        <div class="text-3xl font-bold text-vbp-bright mb-2">$2k–$4k/mo</div>
-                    </div>
-                    
-                    <p class="text-gray-300 mb-8">Ongoing ops support with automation and process guidance. Monthly reviews, improvements, and strategic planning.</p>
-                    
-                    <a href="https://calendly.com/vpascetti-vbpsolutions/30min" 
-                       class="w-full bg-transparent border-2 border-vbp-bright text-vbp-bright hover:bg-vbp-bright hover:text-white font-bold py-3 px-6 rounded-lg transition-all inline-block text-center">
-                        Let's fix your ops
-                    </a>
-                </div>
-
-                <!-- On-Site Consulting -->
-                <div class="glass-effect p-8 rounded-xl relative">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-semibold mb-2">On-Site Consulting</h3>
-                        <div class="text-3xl font-bold text-vbp-bright mb-2">Starts at $7k+</div>
-                    </div>
-                    
-                    <p class="text-gray-300 mb-8">I'll show up in person—but I charge more because I'm leaving my home and family to unfuck your business. You cover hotel, flights, food, and rental car.</p>
-                    
-                    <a href="https://calendly.com/vpascetti-vbpsolutions/30min" 
-                       class="w-full bg-transparent border-2 border-vbp-bright text-vbp-bright hover:bg-vbp-bright hover:text-white font-bold py-3 px-6 rounded-lg transition-all inline-block text-center">
-                        Request custom quote
-                    </a>
-                </div>
-            </div>
+    <!-- How It Works Teaser -->
+    <section>
+      <div class="container">
+        <h2>How It Works</h2>
+        <p>Three simple phases to transform data into insight</p>
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Connect</h3>
+            <p>Plug ShadowOps into your ERP and plant-floor data. Start with CSV, scale to APIs or live connectors.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Model</h3>
+            <p>Our system learns your constraints, work center capacity, and supply chain. Zero configuration—automatic constraint detection.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Alert</h3>
+            <p>Get alerts routed to the right people (production, procurement, customer service). Act before your customer asks "where is my order?"</p>
+          </div>
         </div>
+        <div style="text-align: center;">
+          <a href="/how-it-works/" class="btn btn-secondary">Learn More →</a>
+        </div>
+      </div>
     </section>
 
-    <!-- Remote vs On-Site Section -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-vbp-dark">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8">Remote? Or You Want Me There in Person?</h2>
-            <div class="text-xl text-gray-300 leading-relaxed mb-12 space-y-6">
-                <p>
-                    Most of the time, I work remote—because systems can be fixed from anywhere, and I like sleeping in my own bed. But if your operation needs a full-on physical walkthrough, in-person strategy, or face-to-face chaos sorting, I'll come to you.
-                </p>
-                <p>
-                    Just know this: on-site costs more. You're not just paying for time—you're covering flights, hotel, rental car, meals, and the fact that I'm not home with my family while I'm fixing your shit.
-                </p>
-                <p>
-                    If you need me on the ground, we start with a conversation about scope, timeline, and logistics. No surprises, no hidden fees—just upfront costs for upfront results.
-                </p>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                <a href="https://calendly.com/vpascetti-vbpsolutions/30min" 
-                   class="bg-vbp-bright hover:bg-blue-400 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors inline-block">
-                    Remote: Book a Clarity Call
-                </a>
-                <a href="https://calendly.com/vpascetti-vbpsolutions/30min" 
-                   class="border-2 border-vbp-bright text-vbp-bright hover:bg-vbp-bright hover:text-white font-bold py-4 px-8 rounded-lg text-lg transition-all inline-block">
-                    On-Site: Request a Custom Quote
-                </a>
-            </div>
+    <!-- Use Cases Teaser -->
+    <section style="background-color: var(--bg);">
+      <div class="container">
+        <h2>Common Challenges</h2>
+        <p>See how ShadowOps handles the real risks that manufacturers face</p>
+        <div class="cards-grid">
+          <a href="/use-cases/#late-jobs" class="card" style="text-decoration: none;">
+            <h3>Late Jobs</h3>
+            <p>Predict which orders will slip before they're late. Know why, notify the right team, and fix it.</p>
+            <span style="color: var(--accent); font-weight: 600;">Explore →</span>
+          </a>
+          <a href="/use-cases/#material-shortages" class="card" style="text-decoration: none;">
+            <h3>Material Shortages</h3>
+            <p>Surface supply constraints early. Know which jobs are at risk and what to reorder now.</p>
+            <span style="color: var(--accent); font-weight: 600;">Explore →</span>
+          </a>
+          <a href="/use-cases/#machine-downtime" class="card" style="text-decoration: none;">
+            <h3>Machine Downtime</h3>
+            <p>Understand ripple effects of downtime. Reschedule and mitigate before orders miss dates.</p>
+            <span style="color: var(--accent); font-weight: 600;">Explore →</span>
+          </a>
+          <a href="/use-cases/#labor-constraints" class="card" style="text-decoration: none;">
+            <h3>Labor & Constraints</h3>
+            <p>Identify skilled labor bottlenecks. Plan staffing and training before they impact your schedule.</p>
+            <span style="color: var(--accent); font-weight: 600;">Explore →</span>
+          </a>
         </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-vbp-dark">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-4xl font-bold mb-6">About <span class="text-vbp-bright">Valentino Pascetti</span></h2>
-                    <div class="space-y-6 text-lg text-gray-300">
-                        <p>
-                            I've spent the last decade fixing operational dysfunction from the inside—leading ERP rollouts, solving support nightmares, and building no-bullshit systems for manufacturing and SaaS companies. While corporate consultants are busy making decks, I'm building dashboards, SOPs, and automations that actually get used.
-                        </p>
-                        <p>
-                            Whether it's streamlining workflows in DelmiaWORKS, automating reporting in SQL, or ripping the chaos out of onboarding, I've been there. I've worked every angle—support, QA, consulting, implementation. I know how things break, and I know how to fix them fast.
-                        </p>
-                        <p>
-                            No fluff. No 'transformation frameworks.' Just systems that fucking work.
-                        </p>
-                    </div>
-                    <div class="mt-8">
-                        <a href="https://calendly.com/vpascetti-vbpsolutions/30min" 
-                           class="bg-vbp-bright hover:bg-blue-400 text-white font-bold py-3 px-6 rounded-lg transition-colors inline-block">
-                            Book the damn call
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="glass-effect p-8 rounded-xl">
-                    <!-- Profile image -->
-                    <div class="w-full h-80 mb-6 flex items-center justify-center">
-                        <img src="attached_assets/ChatGPT%20Image%20Jul%2024,%202025%20at%2009_24_31%20AM_1753374298247.png" 
-                             alt="Valentino Pascetti" 
-                             class="w-64 h-64 rounded-full border-4 border-vbp-bright"
-                             style="object-fit: cover; object-position: center 0%;"
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                             onload="this.nextElementSibling.style.display='none';">
-                        <div class="w-64 h-64 bg-vbp-bright rounded-full items-center justify-center border-4 border-vbp-bright" style="display:none;">
-                            <div class="text-center text-white">
-                                <div class="text-6xl font-bold mb-2">VP</div>
-                                <p class="text-sm">Photo loading...</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="text-center">
-                        <h3 class="text-2xl font-semibold mb-2">Valentino Pascetti</h3>
-                        <p class="text-vbp-bright font-medium mb-4">Operations Specialist</p>
-                        <div class="flex justify-center space-x-4">
-                            <div class="text-center">
-                                <div class="text-2xl font-bold text-vbp-bright">10+</div>
-                                <div class="text-sm text-gray-400">Years Experience</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-2xl font-bold text-vbp-bright">50+</div>
-                                <div class="text-sm text-gray-400">Systems Fixed</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-2xl font-bold text-vbp-bright">0</div>
-                                <div class="text-sm text-gray-400">Suits Worn</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- CTA Band -->
+    <section class="cta-band">
+      <div class="container">
+        <h2>Run a Pilot in Weeks, Not Quarters</h2>
+        <p>Get ShadowOps running on your plant data in 2–3 weeks. No long RFPs, no months of setup.</p>
+        <a href="/pilot/" class="btn btn-primary btn-large">Request a Pilot</a>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4">Ready to stop duct-taping your ops?</h2>
-                <a href="https://calendly.com/vpascetti-vbpsolutions/30min" 
-                   class="bg-vbp-bright hover:bg-blue-400 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors inline-block">
-                    Book a clarity call
-                </a>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-2xl font-bold text-vbp-bright mb-4">VBP Solutions</h3>
-                    <p class="text-gray-400 mb-4">
-                        Fixing broken operations and automating the dumb shit.
-                    </p>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#offers" class="hover:text-vbp-bright transition-colors">Ops Clarity Assessment</a></li>
-                        <li><a href="#offers" class="hover:text-vbp-bright transition-colors">Back-Office Build-Out</a></li>
-                        <li><a href="#offers" class="hover:text-vbp-bright transition-colors">Fractional Ops Partner</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#problem" class="hover:text-vbp-bright transition-colors">The Problem</a></li>
-                        <li><a href="#fix" class="hover:text-vbp-bright transition-colors">The Fix</a></li>
-                        <li><a href="#about" class="hover:text-vbp-bright transition-colors">About Valentino</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-                <p class="text-gray-400">
-                    © 2025 VBP Solutions. <span class="text-vbp-bright">No ties were worn in the making of this site.</span>
-                </p>
-            </div>
-        </div>
-    </footer>
+  <footer>
+    <div class="container">
+      <div>
+        <h4>Product</h4>
+        <a href="/product/">Features</a>
+        <a href="/how-it-works/">How It Works</a>
+        <a href="/use-cases/">Use Cases</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="/about/">About</a>
+        <a href="/pilot/">Pilot Program</a>
+        <a href="/contact/">Contact</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="mailto:hello@shadowops.ai">Email</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ShadowOps. All rights reserved. | <a href="#" style="color: rgba(255,255,255,0.6);">Privacy</a></p>
+    </div>
+  </footer>
 
-    <!-- JavaScript for smooth scrolling and mobile menu -->
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add scroll effect to navbar
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                navbar.style.backdropFilter = 'blur(15px)';
-                navbar.style.backgroundColor = 'rgba(27, 43, 75, 0.9)';
-            } else {
-                navbar.style.backdropFilter = 'blur(10px)';
-                navbar.style.backgroundColor = 'rgba(27, 43, 75, 0.3)';
-            }
-        });
-
-        // Add loading animation
-        window.addEventListener('load', function() {
-            document.body.style.opacity = '1';
-        });
-    </script>
+  <script src="/scripts/main.js"></script>
 </body>
 </html>

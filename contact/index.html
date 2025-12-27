@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact ShadowOps</title>
+  <meta name="description" content="Get in touch to request a pilot or ask questions about ShadowOps.">
+  <meta property="og:title" content="Contact ShadowOps">
+  <meta property="og:description" content="Let's talk about your operations">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="/" class="logo">ShadowOps</a>
+        <nav>
+          <a href="/product/">Product</a>
+          <a href="/how-it-works/">How it Works</a>
+          <a href="/use-cases/">Use Cases</a>
+          <a href="/pilot/">Pilot</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/pilot/" class="btn btn-primary cta-button">Request a Pilot</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Let's Talk</h1>
+          <p class="subhead">Have questions about ShadowOps? Ready to run a pilot? Get in touch.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section>
+      <div class="container">
+        <div style="max-width: 600px; margin: 0 auto;">
+          <h2 style="text-align: center;">Send us a message</h2>
+          <form id="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company *</label>
+              <input type="text" id="company" name="company" required>
+            </div>
+
+            <div class="form-group">
+              <label for="erp">Current ERP</label>
+              <input type="text" id="erp" name="erp" placeholder="e.g., SAP, Oracle, NetSuite">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required placeholder="Tell us about your operation and what you're looking to solve..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Send Message</button>
+          </form>
+
+          <p style="text-align: center; margin-top: var(--space-xl); color: var(--muted); font-size: 0.9rem;">
+            We typically respond within 1 business day. Privacy: We'll never share your email or details.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email Alternative -->
+    <section style="background-color: var(--bg);">
+      <div class="container">
+        <h2 style="text-align: center;">Or reach out directly</h2>
+        <p style="text-align: center; font-size: 1.1rem; color: var(--text);">
+          <a href="mailto:hello@shadowops.ai" style="color: var(--accent); font-weight: 600;">hello@shadowops.ai</a>
+        </p>
+        <p style="text-align: center; color: var(--muted); margin-top: var(--space-md);">
+          Questions? Pilot ready to start? Have a specific scenario? Just email us. We read everything.
+        </p>
+      </div>
+    </section>
+
+    <!-- What Happens Next -->
+    <section>
+      <div class="container">
+        <h2 style="text-align: center;">What Happens Next</h2>
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>We Read It</h3>
+            <p>Usually within a few hours. We actually read your message, not a bot response.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>We Reach Out</h3>
+            <p>A quick 15-minute call to understand your situation, confirm fit, and discuss next steps.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>We Pilot</h3>
+            <p>If it's a good fit, we kick off Week 1. If not, we'll tell you straight—no nonsense.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>
+        <h4>Product</h4>
+        <a href="/product/">Features</a>
+        <a href="/how-it-works/">How It Works</a>
+        <a href="/use-cases/">Use Cases</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="/about/">About</a>
+        <a href="/pilot/">Pilot Program</a>
+        <a href="/contact/">Contact</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="mailto:hello@shadowops.ai">Email</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ShadowOps. All rights reserved. | <a href="#" style="color: rgba(255,255,255,0.6);">Privacy</a></p>
+    </div>
+  </footer>
+
+  <script src="/scripts/main.js"></script>
+</body>
+</html>

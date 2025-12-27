@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works - ShadowOps</title>
+  <meta name="description" content="Learn how ShadowOps connects to your systems, models constraints, and delivers alerts in weeks.">
+  <meta property="og:title" content="How It Works - ShadowOps">
+  <meta property="og:description" content="Three phases: Connect, Model, Alert">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="/" class="logo">ShadowOps</a>
+        <nav>
+          <a href="/product/">Product</a>
+          <a href="/how-it-works/">How it Works</a>
+          <a href="/use-cases/">Use Cases</a>
+          <a href="/pilot/">Pilot</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/pilot/" class="btn btn-primary cta-button">Request a Pilot</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Three Phases to Operational Intelligence</h1>
+          <p class="subhead">From data to decisions in 2–3 weeks. Read-only by default. You stay in control.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phase 1: Connect -->
+    <section>
+      <div class="container">
+        <h2>Phase 1: Connect</h2>
+        <div class="two-column">
+          <div class="two-column-left">
+            <h3>Bring Your Data</h3>
+            <p>ShadowOps plugs into your ERP and plant-floor systems. Start simple:</p>
+            <ul class="feature-list">
+              <li><strong>Pilot phase:</strong> Upload a CSV with jobs, work centers, inventory, and constraints</li>
+              <li><strong>Scale phase:</strong> Connect via API or direct database connector</li>
+              <li><strong>No extraction:</strong> ShadowOps reads only—never changes your source systems</li>
+            </ul>
+            <p><strong>Timeline:</strong> Week 1</p>
+          </div>
+          <div class="two-column-right">
+            <div style="background: var(--bg); padding: var(--space-lg); border-radius: var(--radius-lg);">
+              <h4>Supported Data Sources</h4>
+              <ul class="feature-list">
+                <li>CSV / Excel (pilot)</li>
+                <li>REST API</li>
+                <li>Direct DB read</li>
+                <li>ERP connectors (SAP, Oracle, NetSuite, Delmia)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phase 2: Model -->
+    <section style="background-color: var(--bg);">
+      <div class="container">
+        <h2>Phase 2: Model</h2>
+        <div class="two-column">
+          <div class="two-column-left">
+            <div style="background: var(--surface); padding: var(--space-lg); border-radius: var(--radius-lg); margin-bottom: var(--space-lg);">
+              <h4>What Happens Automatically</h4>
+              <ul class="feature-list">
+                <li>Constraint detection (material, labor, machine, schedule)</li>
+                <li>Work center capacity modeling</li>
+                <li>Supply chain analysis</li>
+                <li>Queue and lead-time calculation</li>
+              </ul>
+            </div>
+            <p><strong>Timeline:</strong> Week 2 (Happens in background while you review early alerts)</p>
+          </div>
+          <div class="two-column-right">
+            <h3>Zero Configuration</h3>
+            <p>No manual setup of constraints or work center rules. ShadowOps learns from your data and infers the model automatically.</p>
+            <p>Our system identifies:</p>
+            <ul class="feature-list">
+              <li>Which materials are in shortage risk</li>
+              <li>Which work centers are bottlenecks</li>
+              <li>Where queue times build up</li>
+              <li>Labor and skill constraints</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phase 3: Alert -->
+    <section>
+      <div class="container">
+        <h2>Phase 3: Alert & Recommend</h2>
+        <div class="two-column">
+          <div class="two-column-left">
+            <h3>Smart Notifications</h3>
+            <p>Alerts are routed to the right people based on role and responsibility:</p>
+            <ul class="feature-list">
+              <li><strong>Production Manager:</strong> Job risk scores, constraint details, reschedule recommendations</li>
+              <li><strong>Procurement:</strong> Material shortage alerts, suggested reorders</li>
+              <li><strong>Customer Service:</strong> Delivery risk for customer orders</li>
+              <li><strong>Leadership:</strong> Plant-wide risk summary</li>
+            </ul>
+          </div>
+          <div class="two-column-right">
+            <h3>Recommendations You Control</h3>
+            <p>ShadowOps suggests actions—you decide:</p>
+            <ul class="feature-list">
+              <li>Reschedule Job B to free up machine for Job A</li>
+              <li>Expedite PO-1234 (material arrives in 3 days instead of 7)</li>
+              <li>Add overtime on Work Center 5 next Tuesday</li>
+              <li>Notify customer: delivery risk is 15%</li>
+            </ul>
+            <p><strong>Timeline:</strong> Week 3 and ongoing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Security & Control -->
+    <section style="background-color: var(--bg);">
+      <div class="container">
+        <h2>Read-Only by Default</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <h3>Zero Automatic Changes</h3>
+            <p>ShadowOps never modifies your ERP, schedules, or inventory without explicit user approval. Every recommendation is logged.</p>
+          </div>
+          <div class="card">
+            <h3>Full Audit Trail</h3>
+            <p>See who saw what alert, when, and what action they took. Complete accountability for every decision.</p>
+          </div>
+          <div class="card">
+            <h3>Role-Based Access</h3>
+            <p>Control who sees alerts, recommendations, and sensitive data. Align with your organizational structure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Summary -->
+    <section>
+      <div class="container">
+        <h2>Complete Rollout Timeline</h2>
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-number">W1</div>
+            <h3>Connect</h3>
+            <p>Upload data, configure data sources, first test alerts generated</p>
+          </div>
+          <div class="step">
+            <div class="step-number">W2</div>
+            <h3>Model</h3>
+            <p>System learns constraints, you review alerts, identify false positives</p>
+          </div>
+          <div class="step">
+            <div class="step-number">W3</div>
+            <h3>Deploy</h3>
+            <p>Full system live, team trained, recommendations flowing, decisions being made</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Band -->
+    <section class="cta-band">
+      <div class="container">
+        <h2>Ready to See It Work?</h2>
+        <p>Start a pilot with your real plant data. 2–3 weeks, no long RFPs.</p>
+        <a href="/pilot/" class="btn btn-primary btn-large">Request a Pilot</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>
+        <h4>Product</h4>
+        <a href="/product/">Features</a>
+        <a href="/how-it-works/">How It Works</a>
+        <a href="/use-cases/">Use Cases</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="/about/">About</a>
+        <a href="/pilot/">Pilot Program</a>
+        <a href="/contact/">Contact</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="mailto:hello@shadowops.ai">Email</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ShadowOps. All rights reserved. | <a href="#" style="color: rgba(255,255,255,0.6);">Privacy</a></p>
+    </div>
+  </footer>
+
+  <script src="/scripts/main.js"></script>
+</body>
+</html>
