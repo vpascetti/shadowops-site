@@ -609,6 +609,28 @@ textarea {
   line-height: 1.7;
 }
 
+/* Stack layout for single-column storytelling */
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.stack.align-center {
+  text-align: center;
+}
+
+.stack.align-left {
+  text-align: left;
+}
+
+.stack.tight {
+  gap: var(--space-md);
+}
+
 /* Comparison Table */
 
 .comparison-table {

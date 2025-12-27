@@ -48,13 +48,13 @@
     <section id="late-jobs">
       <div class="container">
         <h2>Challenge 1: Late Jobs</h2>
-        <div class="two-column">
-          <div class="two-column-left">
+        <div class="stack align-left">
+          <div>
             <h3>The Signal</h3>
             <p><strong>Job SKU-4521 (customer order, due Friday) is at 78% risk of missing its date.</strong></p>
-            <p style="color: var(--text); margin-top: var(--space-md);">ShadowOps flags this on Tuesday morning—three days before the customer even calls asking "where's my order?"</p>
+            <p style="color: var(--text);">ShadowOps flags this on Tuesday morning—three days before the customer even calls asking "where's my order?"</p>
           </div>
-          <div class="two-column-right">
+          <div>
             <h3>Why It's Happening</h3>
             <ul class="feature-list">
               <li>Work Center 3 (bottleneck for finishing) is overbooked</li>
@@ -63,25 +63,25 @@
               <li>Estimated completion: Monday (1 day late)</li>
             </ul>
           </div>
-        </div>
-        
-        <div class="panel panel-soft" style="margin-top: var(--space-lg);">
-          <h4>Recommended Actions</h4>
-          <ul class="feature-list">
-            <li>Move Job 4518 (lower priority) to Work Center 4 (longer lead time, but clears capacity)</li>
-            <li>Run overtime on Work Center 3 Wednesday & Thursday (+4 hours = catch up)</li>
-            <li>Contact customer: "On track for Friday, but tight. Expedite possible for +$500."</li>
-          </ul>
-        </div>
 
-        <div class="panel panel-soft" style="margin-top: var(--space-lg);">
-          <h4>Who Gets Notified</h4>
-          <ul class="feature-list">
-            <li>Production Manager (action needed now)</li>
-            <li>Scheduling (reschedule Job 4518)</li>
-            <li>Customer Service (have customer conversation ready)</li>
-            <li>Finance (potential overtime cost)</li>
-          </ul>
+          <div class="panel panel-soft">
+            <h4>Recommended Actions</h4>
+            <ul class="feature-list">
+              <li>Move Job 4518 (lower priority) to Work Center 4 (longer lead time, but clears capacity)</li>
+              <li>Run overtime on Work Center 3 Wednesday & Thursday (+4 hours = catch up)</li>
+              <li>Contact customer: "On track for Friday, but tight. Expedite possible for +$500."</li>
+            </ul>
+          </div>
+
+          <div class="panel panel-soft">
+            <h4>Who Gets Notified</h4>
+            <ul class="feature-list">
+              <li>Production Manager (action needed now)</li>
+              <li>Scheduling (reschedule Job 4518)</li>
+              <li>Customer Service (have customer conversation ready)</li>
+              <li>Finance (potential overtime cost)</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -90,13 +90,13 @@
     <section id="material-shortages" style="background-color: var(--bg);">
       <div class="container">
         <h2>Challenge 2: Material Shortages</h2>
-        <div class="two-column">
-          <div class="two-column-left">
+        <div class="stack align-left">
+          <div>
             <h3>The Signal</h3>
             <p><strong>Material MT-847 (steel subassembly) will be short by 12 units in 8 days.</strong></p>
-            <p style="color: var(--text); margin-top: var(--space-md);">ShadowOps detects this now. Supplier lead time is 14 days. You can still expedite.</p>
+            <p style="color: var(--text);">ShadowOps detects this now. Supplier lead time is 14 days. You can still expedite.</p>
           </div>
-          <div class="two-column-right">
+          <div>
             <h3>Why It's Happening</h3>
             <ul class="feature-list">
               <li>Safety stock for MT-847 is only 20 units</li>
@@ -106,25 +106,25 @@
               <li>Shortage: 12 units by Day 9</li>
             </ul>
           </div>
-        </div>
 
-        <div class="panel" style="margin-top: var(--space-lg);">
-          <h4>Recommended Actions</h4>
-          <ul class="feature-list">
-            <li>Expedite PO-5643 (24 units MT-847) from normal lead (14 days) to expedite (7 days). Cost: +$300.</li>
-            <li>Delay Job 4622 (lower priority) by 3 days to reduce demand pressure</li>
-            <li>Consider alternative material (MT-846, slight upcharge) for Job 4525 to split usage</li>
-          </ul>
-        </div>
+          <div class="panel">
+            <h4>Recommended Actions</h4>
+            <ul class="feature-list">
+              <li>Expedite PO-5643 (24 units MT-847) from normal lead (14 days) to expedite (7 days). Cost: +$300.</li>
+              <li>Delay Job 4622 (lower priority) by 3 days to reduce demand pressure</li>
+              <li>Consider alternative material (MT-846, slight upcharge) for Job 4525 to split usage</li>
+            </ul>
+          </div>
 
-        <div class="panel panel-soft" style="margin-top: var(--space-lg);">
-          <h4>Who Gets Notified</h4>
-          <ul class="feature-list">
-            <li>Procurement (place expedite order now)</li>
-            <li>Production Manager (plan for alternative or delayed job)</li>
-            <li>Finance (expedite cost approval)</li>
-            <li>Customer Service (if shortage affects customer deliveries)</li>
-          </ul>
+          <div class="panel panel-soft">
+            <h4>Who Gets Notified</h4>
+            <ul class="feature-list">
+              <li>Procurement (place expedite order now)</li>
+              <li>Production Manager (plan for alternative or delayed job)</li>
+              <li>Finance (expedite cost approval)</li>
+              <li>Customer Service (if shortage affects customer deliveries)</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -133,13 +133,13 @@
     <section id="machine-downtime">
       <div class="container">
         <h2>Challenge 3: Machine Downtime</h2>
-        <div class="two-column">
-          <div class="two-column-left">
+        <div class="stack align-left">
+          <div>
             <h3>The Signal</h3>
             <p><strong>Lathe 7 scheduled for maintenance Friday, 8 AM–1 PM (5 hours). This cascades.</strong></p>
-            <p style="color: var(--text); margin-top: var(--space-md);">ShadowOps models the ripple effect immediately and flags at-risk jobs and work centers.</p>
+            <p style="color: var(--text);">ShadowOps models the ripple effect immediately and flags at-risk jobs and work centers.</p>
           </div>
-          <div class="two-column-right">
+          <div>
             <h3>Ripple Effects</h3>
             <ul class="feature-list">
               <li>5 jobs queued for Lathe 7 on Friday</li>
@@ -149,26 +149,26 @@
               <li>2 customer orders at risk</li>
             </ul>
           </div>
-        </div>
 
-        <div class="panel panel-soft" style="margin-top: var(--space-lg);">
-          <h4>Recommended Actions</h4>
-          <ul class="feature-list">
-            <li>Run Lathe 7 Thursday evening to build buffer (3 extra hours)</li>
-            <li>Move lowest-priority job (4518) to Lathe 6 Friday if capacity exists</li>
-            <li>Notify Milling team: delayed feed on Friday, plan alternative work Monday AM</li>
-            <li>Brief customer: "On track, but tight timeline Tuesday. Can expedite +$800 if needed."</li>
-          </ul>
-        </div>
+          <div class="panel panel-soft">
+            <h4>Recommended Actions</h4>
+            <ul class="feature-list">
+              <li>Run Lathe 7 Thursday evening to build buffer (3 extra hours)</li>
+              <li>Move lowest-priority job (4518) to Lathe 6 Friday if capacity exists</li>
+              <li>Notify Milling team: delayed feed on Friday, plan alternative work Monday AM</li>
+              <li>Brief customer: "On track, but tight timeline Tuesday. Can expedite +$800 if needed."</li>
+            </ul>
+          </div>
 
-        <div class="panel panel-soft" style="margin-top: var(--space-lg);">
-          <h4>Who Gets Notified</h4>
-          <ul class="feature-list">
-            <li>Production Manager (rework schedule)</li>
-            <li>Maintenance (confirm downtime, offer alternative timing)</li>
-            <li>Milling Supervisor (prep for idle time, plan contingency)</li>
-            <li>Customer Service (customer notification if needed)</li>
-          </ul>
+          <div class="panel panel-soft">
+            <h4>Who Gets Notified</h4>
+            <ul class="feature-list">
+              <li>Production Manager (rework schedule)</li>
+              <li>Maintenance (confirm downtime, offer alternative timing)</li>
+              <li>Milling Supervisor (prep for idle time, plan contingency)</li>
+              <li>Customer Service (customer notification if needed)</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -177,13 +177,13 @@
     <section id="labor-constraints" style="background-color: var(--bg);">
       <div class="container">
         <h2>Challenge 4: Labor & Skill Constraints</h2>
-        <div class="two-column">
-          <div class="two-column-left">
+        <div class="stack align-left">
+          <div>
             <h3>The Signal</h3>
             <p><strong>Next week: 3 jobs need certified welders. You have 2 certified staff. One is on vacation Wednesday–Friday.</strong></p>
-            <p style="color: var(--text); margin-top: var(--space-md);">ShadowOps identifies the bottleneck and suggests mitigation 10 days out.</p>
+            <p style="color: var(--text);">ShadowOps identifies the bottleneck and suggests mitigation 10 days out.</p>
           </div>
-          <div class="two-column-right">
+          <div>
             <h3>The Constraint</h3>
             <ul class="feature-list">
               <li>Job 4501 (welding, 8 hours) needs certified welder, Mon–Tue</li>
@@ -193,27 +193,27 @@
               <li>Shortage: 6 hours (1 full day)</li>
             </ul>
           </div>
-        </div>
 
-        <div class="panel" style="margin-top: var(--space-lg);">
-          <h4>Recommended Actions</h4>
-          <ul class="feature-list">
-            <li>Delay Job 4598 by 1 week (less critical customer date)</li>
-            <li>Pull forward Job 4501 to start Monday morning (use both welders Mon–Tue)</li>
-            <li>Hire temp certified welder for Wed–Fri (lead time: 3 days, cost: +$2,100)</li>
-            <li>Schedule cross-training for new staff (start 2 weeks)</li>
-          </ul>
-        </div>
+          <div class="panel">
+            <h4>Recommended Actions</h4>
+            <ul class="feature-list">
+              <li>Delay Job 4598 by 1 week (less critical customer date)</li>
+              <li>Pull forward Job 4501 to start Monday morning (use both welders Mon–Tue)</li>
+              <li>Hire temp certified welder for Wed–Fri (lead time: 3 days, cost: +$2,100)</li>
+              <li>Schedule cross-training for new staff (start 2 weeks)</li>
+            </ul>
+          </div>
 
-        <div class="panel panel-soft" style="margin-top: var(--space-lg);">
-          <h4>Who Gets Notified</h4>
-          <ul class="feature-list">
-            <li>Production Manager (staffing adjustment)</li>
-            <li>HR (temp hire request, lead time planning)</li>
-            <li>Scheduling (job reschedule)</li>
-            <li>Finance (temp labor cost approval)</li>
-            <li>Customer Service (Job 4598 delay notification)</li>
-          </ul>
+          <div class="panel panel-soft">
+            <h4>Who Gets Notified</h4>
+            <ul class="feature-list">
+              <li>Production Manager (staffing adjustment)</li>
+              <li>HR (temp hire request, lead time planning)</li>
+              <li>Scheduling (job reschedule)</li>
+              <li>Finance (temp labor cost approval)</li>
+              <li>Customer Service (Job 4598 delay notification)</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
