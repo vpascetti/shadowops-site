@@ -2,6 +2,31 @@
 
 A fast, clean, static marketing site for ShadowOps—operational intelligence for manufacturers. Built with vanilla HTML, CSS, and JavaScript. Production-ready for GitHub Pages.
 
+**Theme:** Dark mode with electric cyan accents (#14D2F8). Modern, professional design with glowing effects and smooth interactions.
+
+## Design System
+
+### Brand Colors
+- **Background:** #090B10 (deep navy)
+- **Surface:** #0F141D (slightly lighter navy)
+- **Text:** #F3F8F8 (off-white)
+- **Muted:** #95A3B3 (soft gray-blue)
+- **Accent (Primary):** #14D2F8 (electric cyan)
+- **Accent 2:** #0CA6DE (deeper cyan)
+- **Ice:** #5DF0F7 (bright cyan)
+
+### Typography
+- **Headings:** Sora (600–800 weight) – geometric, modern sans-serif
+- **Body:** Inter (400–500 weight) – clean, readable sans-serif
+- Both loaded from Google Fonts
+
+### Effects
+- **Border Radius:** 14px (rounded corners on cards, buttons)
+- **Shadow Glow:** `0 0 0 1px rgba(20,210,248,.18), 0 0 40px rgba(20,210,248,.10)` – cyan glow
+- **Hero Gradient:** Radial gradient + subtle grid overlay for depth
+
+## Structure
+
 ## Structure
 
 ```
@@ -61,6 +86,43 @@ A fast, clean, static marketing site for ShadowOps—operational intelligence fo
 - CTA band section
 - Sticky header nav
 - Footer with links
+
+## Add the Logo & Favicon
+
+The site is ready for branding assets. Placeholder files exist at:
+
+### Logo Assets
+- **Full Logo:** `/assets/img/shadowops-logo.png`
+  - Used in hero section
+  - Recommended: 600x400px or similar
+  - Format: PNG with transparency
+  - Design: Shield + S mark with "SHADOWOPS" text
+
+- **Logo Mark (Icon only):** `/assets/img/shadowops-mark.png`
+  - Used in header next to "SHADOWOPS" text
+  - Used in favicon
+  - Recommended: 200x200px (square)
+  - Format: PNG with transparency
+  - Design: Shield + S icon without text
+
+### Favicon & Apple Icon
+- **favicon.ico:** `/assets/favicon/favicon.ico`
+  - Standard favicon (32x32 or 64x64)
+  - Generated from logo mark
+  - Use https://favicon-generator.org/
+
+- **Apple Touch Icon:** `/assets/favicon/apple-touch-icon.png`
+  - For iOS/macOS bookmarks
+  - Size: 180x180px
+  - Format: PNG with transparency
+
+**To add your assets:**
+1. Export logo and mark from your design tool as PNG (transparent background)
+2. Save full logo to `/assets/img/shadowops-logo.png`
+3. Save mark to `/assets/img/shadowops-mark.png`
+4. Generate favicon.ico and save to `/assets/favicon/favicon.ico`
+5. Create apple-touch-icon.png and save to `/assets/favicon/apple-touch-icon.png`
+6. Commit and push
 
 ## Quick Start
 
