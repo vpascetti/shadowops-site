@@ -124,7 +124,7 @@ a:focus {
 /* Container */
 
 .container {
-  max-width: var(--max-width);
+  width: min(900px, 92vw);
   margin: 0 auto;
   padding: 0 var(--space-md);
   text-align: center;
@@ -311,12 +311,16 @@ nav a:focus {
 /* Sections */
 
 section {
-  padding: 4rem var(--space-md);
-  text-align: left;
+  padding: 72px var(--space-md);
+  text-align: center;
 }
 
 section:first-of-type {
   padding-top: 2rem;
+}
+
+section.compact {
+  padding: 56px var(--space-md);
 }
 
 section h2 {
@@ -598,34 +602,41 @@ textarea {
   color: var(--ice);
 }
 
-/* Feature List */
+/* Checklist - primary vertical bullet component */
 
+.checklist,
 .feature-list {
   list-style: none;
-  margin: var(--space-lg) auto;
   padding: 0;
-  max-width: 700px;
-}
-
-.feature-list li {
-  padding: var(--space-sm) 0;
-  padding-left: 1.5rem;
-  position: relative;
-  color: var(--text);
-  line-height: 1.7;
-  margin-bottom: var(--space-sm);
-  display: block;
+  margin: 22px auto 0;
+  width: min(720px, 92vw);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
   text-align: left;
 }
 
-.feature-list li:before {
+.checklist li,
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  line-height: 1.55;
+  color: var(--text);
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.checklist li::before,
+.feature-list li::before {
   content: "✓";
-  position: absolute;
-  left: 0;
   color: var(--accent);
-  font-weight: bold;
-  font-size: 1.25rem;
-  line-height: 1.7;
+  font-weight: 800;
+  line-height: 1;
+  margin-top: 4px;
+  flex: 0 0 auto;
+  font-size: 1.2rem;
 }
 
 /* Stack layout for single-column storytelling */
