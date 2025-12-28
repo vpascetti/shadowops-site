@@ -13,11 +13,12 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <a href="/" class="logo">
-          <img src="/assets/img/shadowops-mark.png" alt="ShadowOps">
+        <a href="/" class="logo brand">
+          <img src="/assets/img/shadowops-logo.png" alt="ShadowOps">
           <span>SHADOWOPS</span>
         </a>
-        <nav>
+        <button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">&#9776;</button>
+        <nav class="nav-links" role="navigation">
           <a href="/product/">Product</a>
           <a href="/how-it-works/">How it Works</a>
           <a href="/use-cases/">Use Cases</a>
@@ -26,6 +27,17 @@
           <a href="/contact/">Contact</a>
           <a href="/pilot/" class="btn btn-primary cta-button">Request a Pilot</a>
         </nav>
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true">
+          <div class="panel">
+            <a href="/product/">Product</a>
+            <a href="/how-it-works/">How it Works</a>
+            <a href="/use-cases/">Use Cases</a>
+            <a href="/pilot/">Pilot</a>
+            <a href="/about/">About</a>
+            <a href="/contact/">Contact</a>
+            <a href="/pilot/" class="btn btn-primary cta">Request a Pilot</a>
+          </div>
+        </div>
       </div>
     </div>
   </header>

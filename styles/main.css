@@ -99,6 +99,14 @@ h4 {
   margin-bottom: var(--space-md);
 }
 
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
 p {
   margin-bottom: var(--space-md);
   color: var(--muted);
@@ -130,6 +138,10 @@ a:focus {
   text-align: center;
 }
 
+.page {
+  width: 100%;
+}
+
 /* Header & Navigation */
 
 header {
@@ -139,6 +151,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+header .container {
+  width: min(1200px, 94vw);
 }
 
 .header-content {
@@ -191,6 +207,47 @@ nav a:focus {
 
 .cta-button {
   margin-left: auto;
+}
+
+/* Brand image sizing (fix overflow and broken icon sizing) */
+.brand img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* Body scroll lock for overlays */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Mobile menu default (hidden on desktop) */
+.mobile-menu {
+  display: none;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-xs);
+  height: 40px;
+  width: 44px;
+  cursor: pointer;
+}
+
+.menu-toggle:hover {
+  border-color: var(--accent2);
+}
+
+.menu-toggle:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 /* Buttons */
@@ -330,6 +387,14 @@ section h2 {
   margin-right: auto;
 }
 
+.section-subtitle {
+  width: min(760px, 92vw);
+  margin: 10px auto 0;
+  color: var(--muted);
+  line-height: 1.7;
+  text-align: center;
+}
+
 section > .container > p {
   text-align: center;
   max-width: 880px;
@@ -363,6 +428,10 @@ section .section-lead {
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   transition: all 0.2s ease;
+  width: 100%;
+  max-width: 900px;
+  margin: 18px auto 0;
+  text-align: left;
 }
 
 .card:hover {
@@ -382,6 +451,10 @@ section .section-lead {
   font-size: 0.95rem;
   color: var(--muted);
   line-height: 1.7;
+  text-align: left;
+  width: 100%;
+  max-width: 900px;
+  margin: 18px auto 0;
   text-align: left;
 }
 
@@ -608,16 +681,15 @@ textarea {
 .feature-list {
   list-style: none;
   padding: 0;
-  margin: 22px auto 0;
-  width: min(720px, 92vw);
+  margin: 18px auto 0;
+  width: min(760px, 92vw);
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 18px;
   text-align: left;
 }
 
-.checklist li,
-.feature-list li {
+.checklist li {
   display: flex;
   align-items: flex-start;
   gap: 12px;
@@ -628,8 +700,7 @@ textarea {
   padding: 0;
 }
 
-.checklist li::before,
-.feature-list li::before {
+.checklist li::before {
   content: "✓";
   color: var(--accent);
   font-weight: 800;
@@ -637,6 +708,36 @@ textarea {
   margin-top: 4px;
   flex: 0 0 auto;
   font-size: 1.2rem;
+}
+
+.subsection {
+  width: min(760px, 92vw);
+  margin: 0 auto;
+  padding: 22px 0;
+  text-align: center;
+}
+
+.subhead {
+  text-align: center;
+  margin: 0 0 14px 0;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+}
+
+.subsection h3 {
+  text-align: center;
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+}
+
+.lead {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 /* Stack layout for single-column storytelling */
@@ -707,9 +808,44 @@ textarea {
   margin-bottom: var(--space-lg);
 }
 
+/* Feature list component (rows: check + label + description) */
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.feature-item .icon {
+  color: var(--accent);
+  font-weight: 900;
+  margin-top: 3px;
+  flex: 0 0 auto;
+}
+
+.feature-item .title {
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.feature-item .desc {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .feature-item { gap: 10px; }
+  .feature-item .title { font-size: 1.05rem; }
+  .feature-item .desc { font-size: 0.98rem; }
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
+    /* Show hamburger button for tablet/phone */
+    .menu-toggle {
+      display: inline-flex;
+      z-index: 300;
+    }
   h1 {
     font-size: 2rem;
   }
@@ -730,9 +866,46 @@ textarea {
     font-size: 1rem;
   }
 
-  nav {
-    gap: var(--space-md);
-    font-size: 0.9rem;
+  /* Hide desktop nav in mobile view; use overlay */
+  .nav-links { display: none; }
+
+  /* Full-screen mobile menu overlay */
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(9,11,16,.92);
+    backdrop-filter: blur(10px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  .mobile-menu.open { display: flex; }
+
+  .mobile-menu .panel{
+    width: min(420px, 92vw);
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .mobile-menu a{
+    font-size: 1.15rem;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: var(--text);
+  }
+
+  .mobile-menu a:hover{ background: rgba(20,210,248,.08); }
+
+  .mobile-menu .cta{
+    margin-top: 10px;
+    padding: 14px 16px;
+    border-radius: 999px;
+    font-weight: 700;
   }
 
   .cta-button {
@@ -772,32 +945,30 @@ textarea {
   h2 {
     font-size: 1.25rem;
   }
-
-  nav {
-    flex-direction: column;
-    gap: var(--space-sm);
-    width: 100%;
-  }
-
-  nav a {
-    font-size: 0.9rem;
-  }
-
-  .btn {
-    font-size: 0.9rem;
-    padding: var(--space-xs) var(--space-sm);
-  }
-
+  /* Keep header compact on mobile */
   header {
-    padding: var(--space-sm) 0;
+    padding: var(--space-xs) 0;
   }
 
   .header-content {
-    flex-direction: column;
-    gap: var(--space-md);
+    flex-direction: row;
+    gap: var(--space-sm);
   }
 
   .logo {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  /* Show hamburger button */
+  .menu-toggle {
+    display: inline-flex;
+    z-index: 300;
+  }
+
+  /* Mobile overlay styles are defined for <=768px */
 }

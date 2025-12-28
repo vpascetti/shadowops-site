@@ -16,11 +16,12 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <a href="/" class="logo">
-          <img src="/assets/img/shadowops-mark.png" alt="ShadowOps">
+        <a href="/" class="logo brand">
+          <img src="/assets/img/shadowops-logo.png" alt="ShadowOps">
           <span>SHADOWOPS</span>
         </a>
-        <nav>
+        <button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">&#9776;</button>
+        <nav class="nav-links" role="navigation">
           <a href="/product/">Product</a>
           <a href="/how-it-works/">How it Works</a>
           <a href="/use-cases/">Use Cases</a>
@@ -29,35 +30,46 @@
           <a href="/contact/">Contact</a>
           <a href="/pilot/" class="btn btn-primary cta-button">Request a Pilot</a>
         </nav>
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true">
+          <div class="panel">
+            <a href="/product/">Product</a>
+            <a href="/how-it-works/">How it Works</a>
+            <a href="/use-cases/">Use Cases</a>
+            <a href="/pilot/">Pilot</a>
+            <a href="/about/">About</a>
+            <a href="/contact/">Contact</a>
+            <a href="/pilot/" class="btn btn-primary cta">Request a Pilot</a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
-  <main>
+  <main class="page">
     <!-- Hero -->
     <section class="hero">
       <div class="container">
         <div class="hero-content">
           <h1>Built by Someone Who Lived Plant Reality</h1>
           <p class="subhead">ShadowOps exists because manufacturing teams deserve visibility, clarity, and control—not another black box.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Story -->
-    <section>
-      <div class="container">
-        <h2>The Story</h2>
-        <div class="stack align-center">
-          <p>I spent a decade implementing ERPs, fixing broken operations, and watching manufacturers get crushed by hidden constraints. I watched manufacturers lose orders, miss deadlines, and waste resources solving yesterday's problems while next week's crises went unnoticed.</p>
-          <p>The pattern was always the same:</p>
-          <ul class="feature-list" style="text-align: left; margin: 0 auto; max-width: 840px;">
-            <li>ERP has the data, but no one knows why jobs slip</li>
-            <li>Late jobs surprise the customer, not the operations team</li>
-            <li>Nobody trusts the numbers, so decisions are guesses</li>
-            <li>Firefighting becomes the job—actual planning is impossible</li>
-          </ul>
-          <p style="font-size: 1.1rem; color: var(--muted); margin-top: var(--space-md);">That's when I realized: they don't need another ERP. They need an intelligence layer that sits on top, surfaces risk early, and helps them make decisions before the phone rings with a customer complaint.</p>
+        <section>
+          <div class="container">
+            <h3 class="section-title">The Story</h3>
+            <div class="subsection">
+              <h3 class="subhead">The Signal</h3>
+              <p class="lead">I spent a decade implementing ERPs, fixing broken operations, and watching manufacturers get crushed by hidden constraints. I watched manufacturers lose orders, miss deadlines, and waste resources solving yesterday's problems while next week's crises went unnoticed.</p>
+              <p class="lead">The pattern was always the same:</p>
+              <ul class="checklist">
+                <li>ERP has the data, but no one knows why jobs slip</li>
+                <li>Late jobs surprise the customer, not the operations team</li>
+                <li>Nobody trusts the numbers, so decisions are guesses</li>
+                <li>Firefighting becomes the job—actual planning is impossible</li>
+              </ul>
+              <p class="lead" style="font-size: 1.1rem; color: var(--muted); margin-top: var(--space-md);">That's when I realized: they don't need another ERP. They need an intelligence layer that sits on top, surfaces risk early, and helps them make decisions before the phone rings with a customer complaint.</p>
+              <p class="lead" style="font-size: 1.15rem; color: var(--ice); font-weight: 700;">That's ShadowOps.</p>
+            </div>
+          </div>
+        </section>
           <p style="font-size: 1.15rem; color: var(--ice); font-weight: 700;">That's ShadowOps.</p>
         </div>
       </div>
@@ -66,7 +78,7 @@
     <!-- Mission -->
     <section style="background-color: var(--bg);">
       <div class="container">
-        <h2>Our Mission</h2>
+        <h3 class="section-title">Our Mission</h3>
         <div class="cards-grid">
           <div class="card">
             <h3>See Risk Earlier</h3>
@@ -87,7 +99,7 @@
     <!-- Values -->
     <section>
       <div class="container">
-        <h2>What We Believe</h2>
+        <h3 class="section-title">What We Believe</h3>
         <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-2xl);">
           <div class="card" style="background: transparent; border: none; padding: 0;">
             <h3 style="font-size: 1.35rem; margin-bottom: var(--space-md);">Read-Only by Default</h3>
@@ -112,7 +124,7 @@
     <!-- CTA Band -->
     <section class="cta-band">
       <div class="container">
-        <h2>Let's Build Better Operations Together</h2>
+        <h3 class="section-title">Let's Build Better Operations Together</h3>
         <p>Run a pilot with your real plant data. See the risk, understand why, and make better decisions.</p>
         <a href="/pilot/" class="btn btn-primary btn-large">Request a Pilot</a>
       </div>

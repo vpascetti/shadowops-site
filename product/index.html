@@ -16,11 +16,12 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <a href="/" class="logo">
-          <img src="/assets/img/shadowops-mark.png" alt="ShadowOps">
+        <a href="/" class="logo brand">
+          <img src="/assets/img/shadowops-logo.png" alt="ShadowOps">
           <span>SHADOWOPS</span>
         </a>
-        <nav>
+        <button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">&#9776;</button>
+        <nav class="nav-links" role="navigation">
           <a href="/product/">Product</a>
           <a href="/how-it-works/">How it Works</a>
           <a href="/use-cases/">Use Cases</a>
@@ -29,6 +30,17 @@
           <a href="/contact/">Contact</a>
           <a href="/pilot/" class="btn btn-primary cta-button">Request a Pilot</a>
         </nav>
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true">
+          <div class="panel">
+            <a href="/product/">Product</a>
+            <a href="/how-it-works/">How it Works</a>
+            <a href="/use-cases/">Use Cases</a>
+            <a href="/pilot/">Pilot</a>
+            <a href="/about/">About</a>
+            <a href="/contact/">Contact</a>
+            <a href="/pilot/" class="btn btn-primary cta">Request a Pilot</a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -47,7 +59,7 @@
     <!-- What It Is / Isn't -->
     <section>
       <div class="container">
-        <h2>What ShadowOps Does (and Doesn't Do)</h2>
+        <h3 class="section-title">What ShadowOps Does (and Doesn't Do)</h3>
         <div class="two-column">
           <div class="two-column-left">
             <h3>✓ What It Does</h3>
@@ -78,7 +90,7 @@
     <!-- Key Capabilities -->
     <section style="background-color: var(--bg);">
       <div class="container">
-        <h2>Core Capabilities</h2>
+        <h3 class="section-title">Core Capabilities</h3>
         <div class="cards-grid">
           <div class="card">
             <h3>Risk Scoring</h3>
@@ -111,7 +123,7 @@
     <!-- Comparison Table -->
     <section>
       <div class="container">
-        <h2>ShadowOps vs. Your ERP Dashboard</h2>
+        <h3 class="section-title">ShadowOps vs. Your ERP Dashboard</h3>
         <p style="margin-bottom: var(--space-xl);">Your ERP shows you what happened. ShadowOps shows you what's about to happen.</p>
         <table class="comparison-table">
           <thead>
@@ -165,7 +177,7 @@
     <!-- CTA Band -->
     <section class="cta-band">
       <div class="container">
-        <h2>Ready to See It in Action?</h2>
+        <h3 class="section-title">Ready to See It in Action?</h3>
         <p>Request a pilot and we'll connect ShadowOps to your plant data in 2–3 weeks.</p>
         <a href="/pilot/" class="btn btn-primary btn-large">Request a Pilot</a>
       </div>

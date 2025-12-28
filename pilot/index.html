@@ -16,11 +16,12 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <a href="/" class="logo">
-          <img src="/assets/img/shadowops-mark.png" alt="ShadowOps">
+        <a href="/" class="logo brand">
+          <img src="/assets/img/shadowops-logo.png" alt="ShadowOps">
           <span>SHADOWOPS</span>
         </a>
-        <nav>
+        <button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">&#9776;</button>
+        <nav class="nav-links" role="navigation">
           <a href="/product/">Product</a>
           <a href="/how-it-works/">How it Works</a>
           <a href="/use-cases/">Use Cases</a>
@@ -29,6 +30,17 @@
           <a href="/contact/">Contact</a>
           <a href="/pilot/" class="btn btn-primary cta-button">Request a Pilot</a>
         </nav>
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true">
+          <div class="panel">
+            <a href="/product/">Product</a>
+            <a href="/how-it-works/">How it Works</a>
+            <a href="/use-cases/">Use Cases</a>
+            <a href="/pilot/">Pilot</a>
+            <a href="/about/">About</a>
+            <a href="/contact/">Contact</a>
+            <a href="/pilot/" class="btn btn-primary cta">Request a Pilot</a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -47,7 +59,7 @@
     <!-- What You Get -->
     <section>
       <div class="container">
-        <h2>What's Included in Your Pilot</h2>
+        <h3 class="section-title">What's Included in Your Pilot</h3>
         <div class="cards-grid">
           <div class="card">
             <h3>📊 Risk Dashboard</h3>
@@ -80,7 +92,7 @@
     <!-- How to Qualify -->
     <section style="background-color: var(--bg);">
       <div class="container">
-        <h2>Pilot Qualifications</h2>
+        <h3 class="section-title">Pilot Qualifications</h3>
         <p>We're looking for manufacturers where ShadowOps can have the most impact. You're a good fit if:</p>
         <div class="two-column">
           <div class="two-column-left">
@@ -106,7 +118,7 @@
     <!-- Timeline -->
     <section>
       <div class="container">
-        <h2>2–3 Week Timeline</h2>
+        <h3 class="section-title">2–3 Week Timeline</h3>
         <div class="steps-grid">
           <div class="step">
             <div class="step-number">W1</div>
@@ -130,7 +142,7 @@
     <!-- Pricing -->
     <section style="background-color: var(--bg);">
       <div class="container">
-        <h2>Pilot Cost & Pricing</h2>
+        <h3 class="section-title">Pilot Cost & Pricing</h3>
         <p style="text-align: center; margin-bottom: var(--space-xl);">Pilot participation is free. You cover the cost of your team's time (2–3 hours per week for 3 weeks). After the pilot, founder pricing applies.</p>
         <div class="cards-grid">
           <div class="card">
@@ -151,7 +163,7 @@
     <!-- FAQ -->
     <section>
       <div class="container">
-        <h2>Common Questions</h2>
+        <h3 class="section-title">Common Questions</h3>
         <div class="cards-grid">
           <div class="card">
             <h3>Do you access my ERP data?</h3>
@@ -184,7 +196,7 @@
     <!-- CTA Section -->
     <section class="cta-band">
       <div class="container">
-        <h2>Ready to Get Early Visibility?</h2>
+        <h3 class="section-title">Ready to Get Early Visibility?</h3>
         <p>Request a pilot. We'll discuss your plant, confirm fit, and kick off Week 1.</p>
         <a href="/contact/" class="btn btn-primary btn-large">Request a Pilot</a>
       </div>

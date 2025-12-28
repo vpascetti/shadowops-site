@@ -17,11 +17,12 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <a href="/" class="logo">
-          <img src="/assets/img/shadowops-mark.png" alt="ShadowOps">
+        <a href="/" class="logo brand">
+          <img src="/assets/img/shadowops-logo.png" alt="ShadowOps">
           <span>SHADOWOPS</span>
         </a>
-        <nav>
+        <button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">&#9776;</button>
+        <nav class="nav-links" role="navigation">
           <a href="/product/">Product</a>
           <a href="/how-it-works/">How it Works</a>
           <a href="/use-cases/">Use Cases</a>
@@ -30,6 +31,17 @@
           <a href="/contact/">Contact</a>
           <a href="/pilot/" class="btn btn-primary cta-button">Request a Pilot</a>
         </nav>
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true">
+          <div class="panel">
+            <a href="/product/">Product</a>
+            <a href="/how-it-works/">How it Works</a>
+            <a href="/use-cases/">Use Cases</a>
+            <a href="/pilot/">Pilot</a>
+            <a href="/about/">About</a>
+            <a href="/contact/">Contact</a>
+            <a href="/pilot/" class="btn btn-primary cta">Request a Pilot</a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -53,7 +65,7 @@
     <!-- Outcome Cards -->
     <section>
       <div class="container">
-        <h2>Three Outcomes, One Platform</h2>
+        <h3 class="section-title">Three Outcomes, One Platform</h3>
         <div class="cards-grid">
           <div class="card">
             <div class="card-icon">👁️</div>
@@ -77,7 +89,7 @@
     <!-- Not a Replacement Section -->
     <section style="background-color: var(--bg);">
       <div class="container">
-        <h2>ShadowOps Is Not Your ERP</h2>
+        <h3 class="section-title">ShadowOps Is Not Your ERP</h3>
         <p>ShadowOps sits <strong>on top of</strong> your existing ERP and plant-floor systems as a read-only intelligence layer. It doesn't replace your scheduling, planning, or MES—it enhances your decision-making with early risk signals and human-driven recommendations. You stay in control.</p>
       </div>
     </section>
@@ -85,7 +97,7 @@
     <!-- How It Works Teaser -->
     <section>
       <div class="container">
-        <h2>How It Works</h2>
+        <h3 class="section-title">How It Works</h3>
         <p>Three simple phases to transform data into insight</p>
         <div class="steps-grid">
           <div class="step">
@@ -113,7 +125,7 @@
     <!-- Use Cases Teaser -->
     <section style="background-color: var(--bg);">
       <div class="container">
-        <h2>Common Challenges</h2>
+        <h3 class="section-title">Common Challenges</h3>
         <p>See how ShadowOps handles the real risks that manufacturers face</p>
         <div class="cards-grid">
           <a href="/use-cases/#late-jobs" class="card" style="text-decoration: none;">
@@ -143,7 +155,7 @@
     <!-- CTA Band -->
     <section class="cta-band">
       <div class="container">
-        <h2>Run a Pilot in Weeks, Not Quarters</h2>
+        <h3 class="section-title">Run a Pilot in Weeks, Not Quarters</h3>
         <p>Get ShadowOps running on your plant data in 2–3 weeks. No long RFPs, no months of setup.</p>
         <a href="/pilot/" class="btn btn-primary btn-large">Request a Pilot</a>
       </div>

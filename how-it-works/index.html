@@ -16,11 +16,12 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <a href="/" class="logo">
-          <img src="/assets/img/shadowops-mark.png" alt="ShadowOps">
+        <a href="/" class="logo brand">
+          <img src="/assets/img/shadowops-logo.png" alt="ShadowOps">
           <span>SHADOWOPS</span>
         </a>
-        <nav>
+        <button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">&#9776;</button>
+        <nav class="nav-links" role="navigation">
           <a href="/product/">Product</a>
           <a href="/how-it-works/">How it Works</a>
           <a href="/use-cases/">Use Cases</a>
@@ -29,11 +30,22 @@
           <a href="/contact/">Contact</a>
           <a href="/pilot/" class="btn btn-primary cta-button">Request a Pilot</a>
         </nav>
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true">
+          <div class="panel">
+            <a href="/product/">Product</a>
+            <a href="/how-it-works/">How it Works</a>
+            <a href="/use-cases/">Use Cases</a>
+            <a href="/pilot/">Pilot</a>
+            <a href="/about/">About</a>
+            <a href="/contact/">Contact</a>
+            <a href="/pilot/" class="btn btn-primary cta">Request a Pilot</a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
-  <main>
+  <main class="page">
     <!-- Hero -->
     <section class="hero">
       <div class="container">
@@ -47,28 +59,44 @@
     <!-- Phase 1: Connect -->
     <section>
       <div class="container">
-        <h2>Phase 1: Connect</h2>
-        <div class="two-column">
-          <div class="two-column-left">
-            <h3>Bring Your Data</h3>
-            <p>ShadowOps plugs into your ERP and plant-floor systems. Start simple:</p>
+        <h3 class="section-title">Phase 1: Connect</h3>
+        <div class="subsection">
+          <h3 class="subhead">Bring Your Data</h3>
+          <p class="lead">ShadowOps plugs into your ERP and plant-floor systems. Start simple:</p>
+          <ul class="feature-list">
+            <li class="feature-item">
+              <span class="icon">✓</span>
+              <div class="content">
+                <div class="title">Pilot phase:</div>
+                <div class="desc">Upload a CSV with jobs, work centers, inventory, and constraints</div>
+              </div>
+            </li>
+            <li class="feature-item">
+              <span class="icon">✓</span>
+              <div class="content">
+                <div class="title">Scale phase:</div>
+                <div class="desc">Connect via API or direct database connector</div>
+              </div>
+            </li>
+            <li class="feature-item">
+              <span class="icon">✓</span>
+              <div class="content">
+                <div class="title">No extraction:</div>
+                <div class="desc">ShadowOps reads only—never changes your source systems</div>
+              </div>
+            </li>
+          </ul>
+          <p class="lead"><strong>Timeline:</strong> Week 1</p>
+        </div>
+        <div class="subsection">
+          <h3 class="subhead">Supported Data Sources</h3>
+          <div class="card">
             <ul class="feature-list">
-              <li><strong>Pilot phase:</strong> Upload a CSV with jobs, work centers, inventory, and constraints</li>
-              <li><strong>Scale phase:</strong> Connect via API or direct database connector</li>
-              <li><strong>No extraction:</strong> ShadowOps reads only—never changes your source systems</li>
+              <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">CSV / Excel</div><div class="desc">Ideal for pilot</div></div></li>
+              <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">REST API</div><div class="desc">Standard integrations</div></div></li>
+              <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Direct DB read</div><div class="desc">Read-only connectors</div></div></li>
+              <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">ERP connectors</div><div class="desc">SAP, Oracle, NetSuite, Delmia</div></div></li>
             </ul>
-            <p><strong>Timeline:</strong> Week 1</p>
-          </div>
-          <div class="two-column-right">
-            <div class="panel panel-soft">
-              <h4>Supported Data Sources</h4>
-              <ul class="feature-list">
-                <li>CSV / Excel (pilot)</li>
-                <li>REST API</li>
-                <li>Direct DB read</li>
-                <li>ERP connectors (SAP, Oracle, NetSuite, Delmia)</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -77,31 +105,29 @@
     <!-- Phase 2: Model -->
     <section style="background-color: var(--bg);">
       <div class="container">
-        <h2>Phase 2: Model</h2>
-        <div class="two-column">
-          <div class="two-column-left">
-            <div class="panel" style="margin-bottom: var(--space-lg);">
-              <h4>What Happens Automatically</h4>
-              <ul class="feature-list">
-                <li>Constraint detection (material, labor, machine, schedule)</li>
-                <li>Work center capacity modeling</li>
-                <li>Supply chain analysis</li>
-                <li>Queue and lead-time calculation</li>
-              </ul>
-            </div>
-            <p><strong>Timeline:</strong> Week 2 (Happens in background while you review early alerts)</p>
-          </div>
-          <div class="two-column-right">
-            <h3>Zero Configuration</h3>
-            <p>No manual setup of constraints or work center rules. ShadowOps learns from your data and infers the model automatically.</p>
-            <p>Our system identifies:</p>
+        <h3 class="section-title">Phase 2: Model</h3>
+        <div class="subsection">
+          <h3 class="subhead">What Happens Automatically</h3>
+          <div class="card">
             <ul class="feature-list">
-              <li>Which materials are in shortage risk</li>
-              <li>Which work centers are bottlenecks</li>
-              <li>Where queue times build up</li>
-              <li>Labor and skill constraints</li>
+              <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Constraint detection</div><div class="desc">Material, labor, machine, schedule</div></div></li>
+              <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Capacity modeling</div><div class="desc">Per work center</div></div></li>
+              <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Supply chain analysis</div><div class="desc">Forecast + inventory</div></div></li>
+              <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Queue & lead-time</div><div class="desc">Automatic calculation</div></div></li>
             </ul>
           </div>
+          <p class="lead"><strong>Timeline:</strong> Week 2 (Happens in background while you review early alerts)</p>
+        </div>
+        <div class="subsection">
+          <h3 class="subhead">Zero Configuration</h3>
+          <p class="lead" style="text-align:center;">No manual setup of constraints or work center rules. ShadowOps learns from your data and infers the model automatically.</p>
+          <p class="lead" style="text-align:center;">Our system identifies:</p>
+          <ul class="feature-list">
+            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Materials at risk</div><div class="desc">Shortage risk and timing</div></div></li>
+            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Bottleneck work centers</div><div class="desc">Capacity and overbooking</div></div></li>
+            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Queue build-ups</div><div class="desc">Where time accumulates</div></div></li>
+            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Labor constraints</div><div class="desc">Skills and availability</div></div></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -109,29 +135,27 @@
     <!-- Phase 3: Alert -->
     <section>
       <div class="container">
-        <h2>Phase 3: Alert & Recommend</h2>
-        <div class="two-column">
-          <div class="two-column-left">
-            <h3>Smart Notifications</h3>
-            <p>Alerts are routed to the right people based on role and responsibility:</p>
-            <ul class="feature-list">
-              <li><strong>Production Manager:</strong> Job risk scores, constraint details, reschedule recommendations</li>
-              <li><strong>Procurement:</strong> Material shortage alerts, suggested reorders</li>
-              <li><strong>Customer Service:</strong> Delivery risk for customer orders</li>
-              <li><strong>Leadership:</strong> Plant-wide risk summary</li>
-            </ul>
-          </div>
-          <div class="two-column-right">
-            <h3>Recommendations You Control</h3>
-            <p>ShadowOps suggests actions—you decide:</p>
-            <ul class="feature-list">
-              <li>Reschedule Job B to free up machine for Job A</li>
-              <li>Expedite PO-1234 (material arrives in 3 days instead of 7)</li>
-              <li>Add overtime on Work Center 5 next Tuesday</li>
-              <li>Notify customer: delivery risk is 15%</li>
-            </ul>
-            <p><strong>Timeline:</strong> Week 3 and ongoing</p>
-          </div>
+        <h3 class="section-title">Phase 3: Alert & Recommend</h3>
+        <div class="subsection">
+          <h3 class="subhead">Smart Notifications</h3>
+          <p class="lead">Alerts are routed to the right people based on role and responsibility:</p>
+          <ul class="feature-list">
+            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Production Manager</div><div class="desc">Job risk scores, constraint details, reschedule recommendations</div></div></li>
+            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Procurement</div><div class="desc">Material shortage alerts, suggested reorders</div></div></li>
+            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Customer Service</div><div class="desc">Delivery risk for customer orders</div></div></li>
+            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Leadership</div><div class="desc">Plant-wide risk summary</div></div></li>
+          </ul>
+        </div>
+        <div class="subsection">
+          <h3 class="subhead">Recommendations You Control</h3>
+          <p class="lead">ShadowOps suggests actions—you decide:</p>
+          <ul class="feature-list">
+            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Reschedule</div><div class="desc">Free up machine for Job A</div></div></li>
+            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Expedite PO-1234</div><div class="desc">Material arrives in 3 days instead of 7</div></div></li>
+            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Add overtime</div><div class="desc">Work Center 5 next Tuesday</div></div></li>
+            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Notify customer</div><div class="desc">Delivery risk is 15%</div></div></li>
+          </ul>
+          <p class="lead"><strong>Timeline:</strong> Week 3 and ongoing</p>
         </div>
       </div>
     </section>
@@ -139,7 +163,7 @@
     <!-- Security & Control -->
     <section style="background-color: var(--bg);">
       <div class="container">
-        <h2>Read-Only by Default</h2>
+        <h3 class="section-title">Read-Only by Default</h3>
         <div class="cards-grid">
           <div class="card">
             <h3>Zero Automatic Changes</h3>
@@ -160,7 +184,7 @@
     <!-- Timeline Summary -->
     <section>
       <div class="container">
-        <h2>Complete Rollout Timeline</h2>
+        <h3 class="section-title">Complete Rollout Timeline</h3>
         <div class="steps-grid">
           <div class="step">
             <div class="step-number">W1</div>
@@ -184,7 +208,7 @@
     <!-- CTA Band -->
     <section class="cta-band">
       <div class="container">
-        <h2>Ready to See It Work?</h2>
+        <h3 class="section-title">Ready to See It Work?</h3>
         <p>Start a pilot with your real plant data. 2–3 weeks, no long RFPs.</p>
         <a href="/pilot/" class="btn btn-primary btn-large">Request a Pilot</a>
       </div>
