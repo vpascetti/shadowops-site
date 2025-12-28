@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeMenu = () => {
       mobileMenu.classList.remove('open');
       menuToggle.setAttribute('aria-expanded', 'false');
-      document.body.classList.remove('no-scroll');
       mobileMenu.setAttribute('aria-hidden', 'true');
       // Restore focus to toggle
       if (previousFocus) {
@@ -48,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const openMenu = () => {
       mobileMenu.classList.add('open');
       menuToggle.setAttribute('aria-expanded', 'true');
-      document.body.classList.add('no-scroll');
       mobileMenu.setAttribute('aria-hidden', 'false');
       // Save previous focus and move focus inside menu
       previousFocus = document.activeElement;
