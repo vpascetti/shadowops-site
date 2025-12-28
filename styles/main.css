@@ -880,6 +880,11 @@ textarea {
     align-items: center;
     justify-content: center;
     padding: 24px;
+    pointer-events: none;
+  }
+
+  .mobile-menu.open {
+    pointer-events: auto;
   }
 
   .mobile-menu.open { display: flex; }
@@ -892,6 +897,8 @@ textarea {
     flex-direction: column;
     gap: 14px;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    pointer-events: auto;
   }
 
   .mobile-menu a{
