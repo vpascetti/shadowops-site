@@ -1,6 +1,54 @@
 // ShadowOps - Main JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+  const fallbackLogoDataUri = 'data:image/svg+xml;utf8,' + encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" role="img" aria-label="ShadowOps">
+      <defs>
+        <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="#14D2F8"/>
+          <stop offset="100%" stop-color="#0CA6DE"/>
+        </linearGradient>
+      </defs>
+      <rect width="280" height="80" rx="12" fill="#0F141D" stroke="#1B2736"/>
+      <path d="M36 16l16 8v16c0 11-7 21-16 24-9-3-16-13-16-24V24l16-8z" fill="url(#g)"/>
+      <path d="M41 30c-6-3-12 2-12 8 0 4 2 7 6 9l6 3c2 1 3 3 3 5 0 3-3 6-7 6-3 0-6-1-8-3l-3 5c3 3 7 4 12 4 8 0 14-5 14-12 0-5-3-8-8-11l-6-3c-2-1-3-2-3-4 0-3 2-5 6-5 2 0 4 1 6 2l4-4z" fill="#090B10"/>
+      <text x="72" y="49" fill="#F3F8F8" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">SHADOWOPS</text>
+    </svg>
+  `);
+
+  const fallbackMarkDataUri = 'data:image/svg+xml;utf8,' + encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-label="ShadowOps mark">
+      <defs>
+        <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="#14D2F8"/>
+          <stop offset="100%" stop-color="#0CA6DE"/>
+        </linearGradient>
+      </defs>
+      <rect width="72" height="72" rx="12" fill="#0F141D" stroke="#1B2736"/>
+      <path d="M36 10l18 8v16c0 13-8 24-18 28-10-4-18-15-18-28V18l18-8z" fill="url(#g)"/>
+      <path d="M42 27c-7-3-13 2-13 8 0 4 2 7 6 9l6 3c2 1 4 3 4 5 0 3-3 6-8 6-3 0-6-1-8-3l-3 5c3 3 7 4 12 4 9 0 15-5 15-12 0-5-3-9-9-11l-6-3c-2-1-3-2-3-4 0-3 2-5 6-5 2 0 4 1 6 2l3-4z" fill="#090B10"/>
+    </svg>
+  `);
+
+  document.querySelectorAll('img').forEach((image) => {
+    const src = image.getAttribute('src') || '';
+    if (!src.includes('shadowops-logo') && !src.includes('shadowops-mark')) return;
+
+    const fallbackSrc = src.includes('shadowops-mark') ? fallbackMarkDataUri : fallbackLogoDataUri;
+    const applyFallback = () => {
+      if (image.dataset.fallbackApplied === 'true') return;
+      image.dataset.fallbackApplied = 'true';
+      image.src = fallbackSrc;
+      image.classList.add('img-fallback-applied');
+    };
+
+    if (image.complete && image.naturalWidth === 0) {
+      applyFallback();
+    } else {
+      image.addEventListener('error', applyFallback, { once: true });
+    }
+  });
+
   // Simple form submission handler for contact form
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
@@ -16,7 +64,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const currentPath = window.location.pathname;
   const allLinks = document.querySelectorAll('a');
   allLinks.forEach(link => {
-    if (link.href && link.href.includes(currentPath) && currentPath !== '/') {
+    let linkPath = '';
+    try {
+      linkPath = new URL(link.href, window.location.origin).pathname;
+    } catch {
+      linkPath = '';
+    }
+
+    if (linkPath && linkPath === currentPath && currentPath !== '/') {
       // Highlight if it's one of our primary nav links
       if (link.closest('.nav-links') || link.closest('.mobile-menu')) {
         link.style.color = 'var(--accent)';
