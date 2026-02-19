@@ -8,6 +8,7 @@
   <meta property="og:title" content="Use Cases - ShadowOps">
   <meta property="og:description" content="Real manufacturing challenges, solved">
   <meta property="og:type" content="website">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
   <link rel="stylesheet" href="/styles/main.css">
@@ -23,29 +24,23 @@
         <button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">&#9776;</button>
         <nav class="nav-links" role="navigation">
           <a href="/product/">Platform</a>
-          <a href="/use-cases/">Use Cases</a>
-          <a href="/security.html">Security</a>
-          <a href="/pilot/">Pilot</a>
           <a href="/about/">Company</a>
           <a href="/contact/">Contact</a>
-          <a href="/pilot/" class="btn btn-primary cta-button">Request a Pilot</a>
+          <a href="/contact/" class="btn btn-primary cta-button">Request a Quote</a>
         </nav>
         <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true">
           <div class="panel">
             <a href="/product/">Platform</a>
-            <a href="/use-cases/">Use Cases</a>
-            <a href="/security.html">Security</a>
-            <a href="/pilot/">Pilot</a>
             <a href="/about/">Company</a>
             <a href="/contact/">Contact</a>
-            <a href="/pilot/" class="btn btn-primary cta">Request a Pilot</a>
+            <a href="/contact/" class="btn btn-primary cta">Request a Quote</a>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="page">
+  <main class="page use-cases-page">
     <!-- Hero -->
     <section class="hero">
       <div class="container">
@@ -68,35 +63,39 @@
     <section id="late-jobs">
       <div class="container">
         <h3 class="section-title">Challenge 1: Late Jobs</h3>
-        <div class="subsection">
+        <div class="subsection use-case-card">
           <h3 class="subhead">The Signal</h3>
-          <p class="lead"><strong>Job SKU-4521 (customer order, due Friday) is at high risk of missing its date.</strong></p>
-          <p class="lead" style="color: var(--text);">ShadowOps flags this on Tuesday morning—three days before the customer even calls asking "where's my order?"</p>
+          <p class="lead"><strong>A high-priority customer order due this week is at high risk of missing its date.</strong></p>
+          <p class="lead use-case-lead-strong">ShadowOps flags this on Tuesday morning—three days before the customer even calls asking "where's my order?"</p>
         </div>
-        <div class="subsection">
+        <div class="subsection use-case-card">
+          <figure class="use-case-visual">
+            <img class="use-case-image" src="/assets/img/ShadowOpsPlatform/Operational%20Dashboard%20-%20Job%20Tracking.png" alt="Late jobs and job tracking view">
+            <figcaption>Job tracking view highlights the highest-risk orders and delivery confidence.</figcaption>
+          </figure>
+        </div>
+        <div class="subsection use-case-card">
           <h3 class="subhead">Why It's Happening</h3>
           <ul class="checklist">
-            <li>Work Center 3 (bottleneck for finishing) is overbooked</li>
-            <li>Three jobs ahead of SKU-4521 scheduled back-to-back</li>
+            <li>A critical work center is overbooked</li>
+            <li>Multiple higher-sequenced jobs are scheduled back-to-back ahead of the at-risk order</li>
             <li>No buffer between operations</li>
-            <li>Estimated completion: Monday (1 day late)</li>
+            <li>Estimated completion slips by one business day</li>
           </ul>
         </div>
-        <div class="subsection">
+        <div class="subsection use-case-card">
           <h3 class="subhead">Recommended Actions</h3>
-          <div class="card">
-            <ul class="checklist">
-              <li>Move Job 4518 (lower priority) to Work Center 4 (longer lead time, but clears capacity)</li>
-              <li>Run overtime on Work Center 3 Wednesday & Thursday (+4 hours = catch up)</li>
-              <li>Contact customer: "On track for Friday, but tight. Expedite possible for +$500."</li>
-            </ul>
-          </div>
+          <ul class="checklist">
+            <li>Move a lower-priority job to an alternate work center to clear capacity</li>
+            <li>Add targeted overtime on the bottleneck resource to recover schedule</li>
+            <li>Proactively update the customer with recovery options and delivery confidence</li>
+          </ul>
         </div>
-        <div class="subsection">
+        <div class="subsection use-case-card">
           <h3 class="subhead">Who Gets Notified</h3>
           <ul class="feature-list">
             <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Production Manager</div><div class="desc">Action needed now</div></div></li>
-            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Scheduling</div><div class="desc">Reschedule Job 4518</div></div></li>
+            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Scheduling</div><div class="desc">Resequence lower-priority work</div></div></li>
             <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Customer Service</div><div class="desc">Have customer conversation ready</div></div></li>
             <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Finance</div><div class="desc">Potential overtime cost</div></div></li>
           </ul>
@@ -108,32 +107,36 @@
     <section id="material-shortages" style="background-color: var(--bg);">
       <div class="container">
         <h3 class="section-title">Challenge 2: Material Shortages</h3>
-        <div class="subsection">
+        <div class="subsection use-case-card">
           <h3 class="subhead">The Signal</h3>
-          <p class="lead"><strong>Material MT-847 (steel subassembly) is projected to be short in 8 days.</strong></p>
-          <p class="lead" style="color: var(--text);">ShadowOps detects this now. Supplier lead time is 14 days. You can still expedite.</p>
+          <p class="lead"><strong>A critical material is projected to be short within the next planning window.</strong></p>
+          <p class="lead use-case-lead-strong">ShadowOps detects this now. Supplier lead time is 14 days. You can still expedite.</p>
         </div>
-        <div class="subsection">
+        <div class="subsection use-case-card">
+          <figure class="use-case-visual">
+            <img class="use-case-image" src="/assets/img/ShadowOpsPlatform/Operational%20Dashboard%20-%20Material%20Status.png" alt="Material status and shortage risk view">
+            <figcaption>Material status view surfaces shortage timing and impacted jobs early.</figcaption>
+          </figure>
+        </div>
+        <div class="subsection use-case-card">
           <h3 class="subhead">Why It's Happening</h3>
           <ul class="checklist">
-            <li>Safety stock for MT-847 is only 20 units</li>
-            <li>Three new jobs entered this week, all using MT-847</li>
-            <li>Current inventory: 32 units</li>
-            <li>Forecasted demand (next 10 days): 44 units</li>
-            <li>Shortage: 12 units by Day 9</li>
+            <li>Safety stock is below target for a shared material</li>
+            <li>New orders entered this week with overlapping material demand</li>
+            <li>On-hand inventory is below projected near-term consumption</li>
+            <li>Demand exceeds available supply inside the next cycle</li>
+            <li>A projected shortfall appears before standard replenishment arrives</li>
           </ul>
         </div>
-        <div class="subsection">
+        <div class="subsection use-case-card">
           <h3 class="subhead">Recommended Actions</h3>
-          <div class="card">
-            <ul class="checklist">
-              <li>Expedite PO-5643 so material lands earlier and reduces shortage risk.</li>
-              <li>Delay Job 4622 (lower priority) by 3 days to reduce demand pressure</li>
-              <li>Consider alternative material (MT-846, slight upcharge) for Job 4525 to split usage</li>
-            </ul>
-          </div>
+          <ul class="checklist">
+            <li>Expedite an open purchase order so material arrives earlier and reduces risk</li>
+            <li>Delay a lower-priority order to reduce near-term demand pressure</li>
+            <li>Use an approved alternate material for select orders where possible</li>
+          </ul>
         </div>
-        <div class="subsection">
+        <div class="subsection use-case-card">
           <h3 class="subhead">Who Gets Notified</h3>
           <ul class="feature-list">
             <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Procurement</div><div class="desc">Place expedite order now</div></div></li>
@@ -149,33 +152,37 @@
     <section id="machine-downtime">
       <div class="container">
         <h3 class="section-title">Challenge 3: Machine Downtime</h3>
-        <div class="subsection">
+        <div class="subsection use-case-card">
           <h3 class="subhead">The Signal</h3>
-          <p class="lead"><strong>Lathe 7 scheduled for maintenance Friday, 8 AM–1 PM (5 hours). This cascades.</strong></p>
-          <p class="lead" style="color: var(--text);">ShadowOps models the ripple effect immediately and flags at-risk jobs and work centers.</p>
+          <p class="lead"><strong>A critical machine is scheduled for maintenance this week, creating downstream schedule risk.</strong></p>
+          <p class="lead use-case-lead-strong">ShadowOps models the ripple effect immediately and flags at-risk jobs and work centers.</p>
         </div>
-        <div class="subsection">
+        <div class="subsection use-case-card">
+          <figure class="use-case-visual">
+            <img class="use-case-image" src="/assets/img/ShadowOpsPlatform/Plant%20Pulse.png" alt="Plant pulse view for machine health and maintenance">
+            <figcaption>Plant Pulse helps teams see maintenance impact before schedule slippage compounds.</figcaption>
+          </figure>
+        </div>
+        <div class="subsection use-case-card">
           <h3 class="subhead">Ripple Effects</h3>
           <ul class="checklist">
-            <li>5 jobs queued for Lathe 7 on Friday</li>
-            <li>Downtime pushes 3 jobs to Monday</li>
-            <li>Monday now overbooked by 6 hours</li>
-            <li>Milling (downstream) loses input, sits idle Tuesday morning</li>
-            <li>2 customer orders at risk</li>
+            <li>Multiple jobs are queued for the affected machine</li>
+            <li>Downtime pushes scheduled work into the next operating window</li>
+            <li>The following day becomes overbooked</li>
+            <li>A downstream work center loses planned input and sits idle</li>
+            <li>Customer orders move into an at-risk state</li>
           </ul>
         </div>
-        <div class="subsection">
+        <div class="subsection use-case-card">
           <h3 class="subhead">Recommended Actions</h3>
-          <div class="card">
-            <ul class="checklist">
-              <li>Run Lathe 7 Thursday evening to build buffer (3 extra hours)</li>
-              <li>Move lowest-priority job (4518) to Lathe 6 Friday if capacity exists</li>
-              <li>Notify Milling team: delayed feed on Friday, plan alternative work Monday AM</li>
-              <li>Brief customer proactively with updated delivery confidence and recovery plan.</li>
-            </ul>
-          </div>
+          <ul class="checklist">
+            <li>Run the constrained machine in advance to build a production buffer</li>
+            <li>Move a lower-priority job to an alternate machine where capacity exists</li>
+            <li>Notify downstream teams of delayed feed and align alternative work</li>
+            <li>Brief customer proactively with updated delivery confidence and recovery plan.</li>
+          </ul>
         </div>
-        <div class="subsection">
+        <div class="subsection use-case-card">
           <h3 class="subhead">Who Gets Notified</h3>
           <ul class="feature-list">
             <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Production Manager</div><div class="desc">Rework schedule</div></div></li>
@@ -191,40 +198,44 @@
     <section id="labor-constraints" style="background-color: var(--bg);">
       <div class="container">
         <h3 class="section-title">Challenge 4: Labor & Skill Constraints</h3>
-        <div class="subsection">
+        <div class="subsection use-case-card">
           <h3 class="subhead">The Signal</h3>
-          <p class="lead"><strong>Next week: 3 jobs need certified welders. You have 2 certified staff. One is on vacation Wednesday–Friday.</strong></p>
-          <p class="lead" style="color: var(--text);">ShadowOps identifies the bottleneck and suggests mitigation 10 days out.</p>
+          <p class="lead"><strong>Next week’s schedule requires specialized labor hours beyond currently available staffing.</strong></p>
+          <p class="lead use-case-lead-strong">ShadowOps identifies the bottleneck and suggests mitigation 10 days out.</p>
         </div>
-        <div class="subsection">
+        <div class="subsection use-case-card">
+          <figure class="use-case-visual">
+            <img class="use-case-image" src="/assets/img/ShadowOpsPlatform/Action%20Items.png" alt="Action items view for staffing and execution">
+            <figcaption>Action items provide a clear playbook for staffing gaps and sequence changes.</figcaption>
+          </figure>
+        </div>
+        <div class="subsection use-case-card">
           <h3 class="subhead">The Constraint</h3>
           <ul class="checklist">
-            <li>Job 4501 (welding, 8 hours) needs certified welder, Mon–Tue</li>
-            <li>Job 4523 (welding, 6 hours) needs certified welder, Wed–Thu</li>
-            <li>Job 4598 (welding, 4 hours) needs certified welder, Thu–Fri</li>
-            <li>Certified staff: 2 FTE, 1 on vacation Wed–Fri</li>
-            <li>Shortage: 6 hours (1 full day)</li>
+            <li>Several planned jobs require a specialized certified skill</li>
+            <li>Demand is concentrated midweek through end-of-week</li>
+            <li>Available qualified labor drops due to planned time off</li>
+            <li>Current staffing cannot fully cover scheduled skilled work</li>
+            <li>A measurable skilled-hours gap emerges in the weekly plan</li>
           </ul>
         </div>
-        <div class="subsection">
+        <div class="subsection use-case-card">
           <h3 class="subhead">Recommended Actions</h3>
-          <div class="card">
-            <ul class="checklist">
-              <li>Delay Job 4598 by 1 week (less critical customer date)</li>
-              <li>Pull forward Job 4501 to start Monday morning (use both welders Mon–Tue)</li>
-              <li>Bring in temporary certified coverage for Wed–Fri if internal staffing cannot close the gap</li>
-              <li>Schedule cross-training for new staff (start 2 weeks)</li>
-            </ul>
-          </div>
+          <ul class="checklist">
+            <li>Delay a lower-priority job with a more flexible customer date</li>
+            <li>Pull forward high-impact work while full skilled coverage is available</li>
+            <li>Bring in temporary certified coverage for Wed–Fri if internal staffing cannot close the gap</li>
+            <li>Schedule cross-training for new staff (start 2 weeks)</li>
+          </ul>
         </div>
-        <div class="subsection">
+        <div class="subsection use-case-card">
           <h3 class="subhead">Who Gets Notified</h3>
           <ul class="feature-list">
             <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Production Manager</div><div class="desc">Staffing adjustment</div></div></li>
             <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">HR</div><div class="desc">Temp hire request, lead time planning</div></div></li>
             <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Scheduling</div><div class="desc">Job reschedule</div></div></li>
             <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Finance</div><div class="desc">Temp labor cost approval</div></div></li>
-            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Customer Service</div><div class="desc">Job 4598 delay notification</div></div></li>
+            <li class="feature-item"><span class="icon">✓</span><div class="content"><div class="title">Customer Service</div><div class="desc">Priority order delay notification</div></div></li>
           </ul>
         </div>
       </div>
@@ -243,7 +254,7 @@
       <div class="container">
         <h3 class="section-title">Bring Your Highest-Exposure Scenario</h3>
         <p>Request a pilot and we’ll scope one plant-level scenario with measurable financial impact.</p>
-        <a href="/pilot/" class="btn btn-primary btn-large">Request a Pilot</a>
+        <a href="/contact/" class="btn btn-primary btn-large">Request a Quote</a>
       </div>
     </section>
   </main>
@@ -254,13 +265,10 @@
         <h4>Product</h4>
         <a href="/product/">Platform</a>
         <a href="/how-it-works/">How It Works</a>
-        <a href="/use-cases/">Use Cases</a>
       </div>
       <div>
         <h4>Company</h4>
         <a href="/about/">Company</a>
-        <a href="/security.html">Security</a>
-        <a href="/pilot/">Pilot Program</a>
         <a href="/contact/">Contact</a>
       </div>
       <div>

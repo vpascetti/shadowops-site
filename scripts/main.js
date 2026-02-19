@@ -157,4 +157,77 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  const zoomableImages = document.querySelectorAll('.zoomable-image');
+  const lightbox = document.getElementById('image-lightbox');
+  const lightboxImage = document.getElementById('image-lightbox-image');
+  const lightboxCaption = document.getElementById('image-lightbox-caption');
+
+  if (zoomableImages.length > 0 && lightbox && lightboxImage && lightboxCaption) {
+    const closeLightbox = () => {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightbox.style.display = '';
+      lightboxImage.removeAttribute('src');
+      lightboxImage.alt = '';
+      lightboxCaption.textContent = '';
+      document.body.classList.remove('no-scroll');
+    };
+
+    const openLightbox = (sourceImage) => {
+      const sourceUrl = sourceImage.currentSrc || sourceImage.src || sourceImage.getAttribute('src') || '';
+      if (!sourceUrl) return;
+      lightboxImage.src = sourceUrl;
+      lightboxImage.alt = sourceImage.alt || 'Screenshot preview';
+      lightboxCaption.textContent = sourceImage.alt || '';
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      lightbox.style.display = 'flex';
+      document.body.classList.add('no-scroll');
+    };
+
+    zoomableImages.forEach((image) => {
+      image.setAttribute('tabindex', '0');
+      image.setAttribute('role', 'button');
+      image.setAttribute('aria-label', `${image.alt || 'Screenshot'} - Click to zoom`);
+
+      image.addEventListener('click', () => {
+        openLightbox(image);
+      });
+
+      image.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openLightbox(image);
+        }
+      });
+    });
+
+    lightbox.addEventListener('click', (event) => {
+      if (!event.target.closest('.image-lightbox-content')) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && lightbox.classList.contains('open')) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('click', (event) => {
+      const image = event.target.closest('img.zoomable-image');
+      if (!image) return;
+      openLightbox(image);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      const activeImage = document.activeElement;
+      if (!activeImage || !activeImage.matches('img.zoomable-image')) return;
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openLightbox(activeImage);
+      }
+    });
+  }
 });

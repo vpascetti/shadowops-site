@@ -8,6 +8,7 @@
   <meta property="og:title" content="Pilot Program - ShadowOps">
   <meta property="og:description" content="Launch your operational intelligence pilot">
   <meta property="og:type" content="website">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
   <link rel="stylesheet" href="/styles/main.css">
@@ -23,35 +24,67 @@
         <button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">&#9776;</button>
         <nav class="nav-links" role="navigation">
           <a href="/product/">Platform</a>
-          <a href="/use-cases/">Use Cases</a>
-          <a href="/security.html">Security</a>
-          <a href="/pilot/">Pilot</a>
           <a href="/about/">Company</a>
           <a href="/contact/">Contact</a>
-          <a href="/pilot/" class="btn btn-primary cta-button">Request a Pilot</a>
+          <a href="/contact/" class="btn btn-primary cta-button">Request a Quote</a>
         </nav>
         <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true">
           <div class="panel">
             <a href="/product/">Platform</a>
-            <a href="/use-cases/">Use Cases</a>
-            <a href="/security.html">Security</a>
-            <a href="/pilot/">Pilot</a>
             <a href="/about/">Company</a>
             <a href="/contact/">Contact</a>
-            <a href="/pilot/" class="btn btn-primary cta">Request a Pilot</a>
+            <a href="/contact/" class="btn btn-primary cta">Request a Quote</a>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <main>
+  <main class="page pilot-page">
     <!-- Hero -->
     <section class="hero">
       <div class="container">
         <div class="hero-content">
           <h1>Pilot ShadowOps in Your Plant in 2–3 Weeks</h1>
           <p class="subhead">Built for operations and leadership teams that need earlier warning on late jobs, constraints, and revenue at risk. Start small, validate fast, then scale.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-divider compact">
+      <div class="container">
+        <div class="signal-band">
+          <p><strong>Security:</strong> ShadowOps is read-only by default and does not write back to ERP records without explicit customer approval.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-divider">
+      <div class="container">
+        <h3 class="section-title">What Teams See During Week 1</h3>
+        <p class="section-subtitle">Pilot teams start with practical visibility into order risk, constraints, and financial exposure.</p>
+        <div class="screenshots-grid">
+          <article class="screenshot-card">
+            <img class="screenshot-image pilot-screenshot" src="/assets/img/ShadowOpsPlatform/Operational%20Dashboard%20-%20Job%20Tracking.png" alt="Job tracking view in pilot" loading="lazy">
+            <div class="content">
+              <h4>Job Risk Visibility</h4>
+              <p>See which orders are trending late and why.</p>
+            </div>
+          </article>
+          <article class="screenshot-card">
+            <img class="screenshot-image pilot-screenshot" src="/assets/img/ShadowOpsPlatform/Operational%20Dashboard%20-%20Material%20Status.png" alt="Material status view in pilot" loading="lazy">
+            <div class="content">
+              <h4>Constraint Signals</h4>
+              <p>Detect material and capacity pressure before it compounds.</p>
+            </div>
+          </article>
+          <article class="screenshot-card">
+            <img class="screenshot-image pilot-screenshot" src="/assets/img/ShadowOpsPlatform/Financial%20Summary%202.png" alt="Financial exposure summary in pilot" loading="lazy">
+            <div class="content">
+              <h4>Financial Exposure</h4>
+              <p>Connect operational risk to revenue and margin impact.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -141,24 +174,41 @@
       </div>
     </section>
 
-    <!-- Pricing -->
-    <section style="background-color: var(--bg);">
+    <!-- Quote Request -->
+    <section id="pilot-contact" style="background-color: var(--bg);">
       <div class="container">
-        <h3 class="section-title">Pilot Cost & Pricing</h3>
-        <p style="text-align: center; margin-bottom: var(--space-xl);">Pilot participation is free. You cover the cost of your team's time (2–3 hours per week for 3 weeks). After the pilot, founder pricing applies.</p>
-        <div class="cards-grid">
-          <div class="card">
-            <h3>Pilot Phase</h3>
-            <h4 style="color: var(--accent); margin-top: var(--space-md);">Free</h4>
-            <p>3-week pilot, full system access, weekly reviews included.</p>
-          </div>
-          <div class="card">
-            <h3>Post-Pilot</h3>
-            <h4 style="color: var(--accent); margin-top: var(--space-md);">Custom Quote</h4>
-            <p>Founder pricing locked in for 2 years. Pricing based on your plant complexity and data volume. Typical range: $15k–$50k/year.</p>
-          </div>
+        <h3 class="section-title">Request a Quote</h3>
+        <p style="text-align: center; margin-bottom: var(--space-xl);">Tell us about your plant context and pilot scope. We’ll follow up with a tailored quote.</p>
+        <div style="max-width: 680px; margin: 0 auto;">
+          <form id="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company *</label>
+              <input type="text" id="company" name="company" required>
+            </div>
+            <div class="form-group">
+              <label for="role">Role *</label>
+              <input type="text" id="role" name="role" required placeholder="e.g., Plant Manager, Ops Director">
+            </div>
+            <div class="form-group">
+              <label for="erp">Current ERP</label>
+              <input type="text" id="erp" name="erp" placeholder="e.g., SAP, Oracle, NetSuite">
+            </div>
+            <div class="form-group">
+              <label for="message">Pilot Scope *</label>
+              <textarea id="message" name="message" required placeholder="Share plant count, primary challenge, data readiness, and target timeline."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Request Quote</button>
+          </form>
+          <p style="text-align: center; margin-top: var(--space-lg); color: var(--muted);">Prefer email? Reach us at <a href="mailto:hello@shadowops.ai">hello@shadowops.ai</a>.</p>
         </div>
-        <p style="text-align: center; margin-top: var(--space-lg); color: var(--muted);">Pricing is discussed during pilot with full transparency so you can decide based on measured value.</p>
       </div>
     </section>
 
@@ -200,7 +250,7 @@
       <div class="container">
         <h3 class="section-title">Ready to Scope Your Pilot?</h3>
         <p>Start with a short fit call and map one high-exposure scenario for Week 1 kickoff.</p>
-        <a href="/pilot/" class="btn btn-primary btn-large">Request a Pilot</a>
+        <a href="#pilot-contact" class="btn btn-primary btn-large">Request a Quote</a>
       </div>
     </section>
   </main>
@@ -211,13 +261,10 @@
         <h4>Product</h4>
         <a href="/product/">Platform</a>
         <a href="/how-it-works/">How It Works</a>
-        <a href="/use-cases/">Use Cases</a>
       </div>
       <div>
         <h4>Company</h4>
         <a href="/about/">Company</a>
-        <a href="/security.html">Security</a>
-        <a href="/pilot/">Pilot Program</a>
         <a href="/contact/">Contact</a>
       </div>
       <div>

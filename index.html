@@ -24,36 +24,30 @@
         <button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">&#9776;</button>
         <nav class="nav-links" role="navigation">
           <a href="/product/">Platform</a>
-          <a href="/use-cases/">Use Cases</a>
-          <a href="/security.html">Security</a>
-          <a href="/pilot/">Pilot</a>
           <a href="/about/">Company</a>
           <a href="/contact/">Contact</a>
-          <a href="/pilot/" class="btn btn-primary cta-button">Request a Pilot</a>
+          <a href="/contact/" class="btn btn-primary cta-button">Request a Quote</a>
         </nav>
         <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true">
           <div class="panel">
             <a href="/product/">Platform</a>
-            <a href="/use-cases/">Use Cases</a>
-            <a href="/security.html">Security</a>
-            <a href="/pilot/">Pilot</a>
             <a href="/about/">Company</a>
             <a href="/contact/">Contact</a>
-            <a href="/pilot/" class="btn btn-primary cta">Request a Pilot</a>
+            <a href="/contact/" class="btn btn-primary cta">Request a Quote</a>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <main>
+  <main class="page home-page">
     <section class="hero">
       <div class="container">
         <div class="hero-content">
           <h1>See Revenue at Risk Before It Ships Late.</h1>
           <p class="subhead">ShadowOps turns ERP data into real-time visibility across plants—late jobs, constraints, and revenue at risk—so leaders act before exposure becomes loss.</p>
           <div class="hero-buttons">
-            <a href="/pilot/" class="btn btn-primary btn-large">Request a Pilot</a>
+            <a href="/contact/" class="btn btn-primary btn-large">Request a Quote</a>
             <a href="/product/" class="btn btn-secondary btn-large">See the Platform</a>
           </div>
           <div class="hero-preview" aria-label="Product preview">
@@ -62,10 +56,10 @@
               <span>Live View</span>
             </div>
             <div class="hero-preview-grid">
-              <div class="preview-block"></div>
-              <div class="preview-block"></div>
-              <div class="preview-block"></div>
-              <div class="preview-block"></div>
+              <img class="hero-preview-shot zoomable-image" src="/assets/img/ShadowOpsPlatform/Executive%20Briefing%201.png" alt="Executive briefing summary" loading="lazy">
+              <img class="hero-preview-shot zoomable-image" src="/assets/img/ShadowOpsPlatform/Operational%20Dashboard%201.png" alt="Operational dashboard overview" loading="lazy">
+              <img class="hero-preview-shot zoomable-image" src="/assets/img/ShadowOpsPlatform/Plant%20Pulse.png" alt="Plant pulse status view" loading="lazy">
+              <img class="hero-preview-shot zoomable-image" src="/assets/img/ShadowOpsPlatform/Financial%20Summary%201.png" alt="Financial summary risk view" loading="lazy">
             </div>
           </div>
         </div>
@@ -74,41 +68,16 @@
 
     <section class="section-divider compact">
       <div class="container">
-        <p class="kpi-meta">Example view</p>
-        <div class="kpi-grid">
-          <div class="kpi-card">
-            <p class="kpi-label">Late Jobs (%)</p>
-            <p class="kpi-value">12.4%</p>
-          </div>
-          <div class="kpi-card">
-            <p class="kpi-label">Revenue at Risk ($)</p>
-            <p class="kpi-value">$4.8M</p>
-          </div>
-          <div class="kpi-card">
-            <p class="kpi-label">Plants Driving Risk</p>
-            <p class="kpi-value">3 / 11</p>
-          </div>
+        <div class="signal-band">
+          <p><strong>Security:</strong> ShadowOps is read-only by default and never writes to ERP records without explicit customer approval.</p>
         </div>
       </div>
     </section>
 
     <section class="section-divider">
       <div class="container">
-        <h2 class="section-title">Enterprise Visibility → Plant Accountability → Job-Level Clarity</h2>
-        <p class="section-subtitle">Click any metric to identify the plant, the job, the blocker (material/machine/labor), and the financial exposure.</p>
-        <div class="tower-flow" aria-label="Control tower drill-down flow">
-          <div class="flow-step">Enterprise</div>
-          <div class="flow-step">Plant</div>
-          <div class="flow-step">Job</div>
-          <div class="flow-step">Root Cause</div>
-          <div class="flow-step">$ Impact</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-divider">
-      <div class="container">
-        <h2 class="section-title">Use Cases</h2>
+        <h2 class="section-title">Where Teams Gain Visibility</h2>
+        <p class="section-subtitle">ShadowOps helps operations and leadership teams prioritize action before risk compounds.</p>
         <div class="cards-grid use-cases-grid">
           <div class="card">
             <h3>Late Jobs + Revenue Impact</h3>
@@ -128,7 +97,38 @@
 
     <section class="section-divider">
       <div class="container">
+        <h2 class="section-title">Platform Preview</h2>
+        <p class="section-subtitle">A quick look at how leaders and operators can move from high-level risk to specific plant action.</p>
+        <div class="screenshots-grid">
+          <article class="screenshot-card">
+            <img class="screenshot-image home-screenshot zoomable-image" src="/assets/img/ShadowOpsPlatform/Operational%20Dashboard%20-%20Schedule%20and%20Priority.png" alt="Operational dashboard schedule and priority view" loading="lazy">
+            <div class="content">
+              <h4>Schedule &amp; Priority</h4>
+              <p>Surface which jobs need action now.</p>
+            </div>
+          </article>
+          <article class="screenshot-card">
+            <img class="screenshot-image home-screenshot zoomable-image" src="/assets/img/ShadowOpsPlatform/Operational%20Dashboard%20-%20Work%20Center%20Load.png" alt="Operational dashboard work center load" loading="lazy">
+            <div class="content">
+              <h4>Work Center Load</h4>
+              <p>Spot bottlenecks before throughput drops.</p>
+            </div>
+          </article>
+          <article class="screenshot-card">
+            <img class="screenshot-image home-screenshot zoomable-image" src="/assets/img/ShadowOpsPlatform/Financial%20Summary%201.png" alt="Financial summary risk view" loading="lazy">
+            <div class="content">
+              <h4>Financial Exposure</h4>
+              <p>Track revenue and margin at risk in real time.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-divider">
+      <div class="container">
         <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">A simple flow from ERP signals to accountable action.</p>
         <div class="steps-grid steps-compact">
           <div class="step">
             <div class="step-number">1</div>
@@ -162,10 +162,17 @@
     <section class="cta-band section-divider">
       <div class="container">
         <h2>Ready to see revenue risk by plant?</h2>
-        <a href="/pilot/" class="btn btn-primary btn-large">Request a Pilot</a>
+        <a href="/contact/" class="btn btn-primary btn-large">Request a Quote</a>
       </div>
     </section>
   </main>
+
+  <div class="image-lightbox" id="image-lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="image-lightbox-content">
+      <img class="image-lightbox-image" id="image-lightbox-image" alt="">
+      <p class="image-lightbox-caption" id="image-lightbox-caption"></p>
+    </div>
+  </div>
 
   <footer>
     <div class="container">
@@ -173,13 +180,10 @@
         <h4>Product</h4>
         <a href="/product/">Platform</a>
         <a href="/how-it-works/">How It Works</a>
-        <a href="/use-cases/">Use Cases</a>
       </div>
       <div>
         <h4>Company</h4>
         <a href="/about/">Company</a>
-        <a href="/security.html">Security</a>
-        <a href="/pilot/">Pilot Program</a>
         <a href="/contact/">Contact</a>
       </div>
       <div>
@@ -192,6 +196,6 @@
     </div>
   </footer>
 
-  <script src="/scripts/main.js"></script>
+  <script src="/scripts/main.js?v=20260219"></script>
 </body>
 </html>
