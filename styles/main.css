@@ -1239,6 +1239,43 @@ textarea {
   margin-bottom: var(--space-md);
 }
 
+.contact-page .container {
+  width: min(920px, 94vw);
+}
+
+.contact-form-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contact-submit {
+  width: 100%;
+}
+
+.contact-meta {
+  text-align: center;
+  margin-top: var(--space-xl);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.contact-email {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.contact-email a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.contact-email-note {
+  text-align: center;
+  color: var(--muted);
+  margin-top: var(--space-md);
+}
+
 .home-page .section-subtitle,
 .how-page .section-subtitle {
   max-width: 860px;
