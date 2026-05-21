@@ -155,7 +155,7 @@ header {
 }
 
 header .container {
-  width: min(1200px, 94vw);
+  width: min(1420px, 96vw);
 }
 
 .header-content {
@@ -195,15 +195,18 @@ header .container {
 
 nav {
   display: flex;
-  gap: var(--space-lg);
+  gap: 0.7rem;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 nav a {
   color: var(--muted);
   font-weight: 500;
+  font-size: 0.9rem;
   transition: color 0.2s ease;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 nav a:hover {
@@ -216,7 +219,10 @@ nav a:focus {
 }
 
 .cta-button {
-  margin-left: auto;
+  margin-left: 0.25rem;
+  font-size: 0.86rem;
+  padding: 0.6rem 0.95rem;
+  border-radius: 999px;
 }
 
 /* Brand image sizing (fix overflow and broken icon sizing) */
@@ -802,6 +808,70 @@ section .section-lead {
   color: var(--text);
 }
 
+.erp-eyebrow {
+  color: var(--accent);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-sm);
+  font-weight: 700;
+}
+
+.erp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.erp-list {
+  list-style: none;
+  margin: var(--space-lg) auto 0;
+  padding: 0;
+  width: min(980px, 94vw);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-sm);
+}
+
+.erp-list li {
+  background: rgba(15,20,29,.78);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.8rem 0.95rem;
+  text-align: left;
+  color: var(--text);
+}
+
+.phase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.phase-card {
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+}
+
+.phase-card h4 {
+  margin-bottom: 0.45rem;
+}
+
+.phase-card p {
+  margin: 0;
+  text-align: left;
+}
+
+.compare-note {
+  max-width: 900px;
+  margin: 0 auto var(--space-lg);
+}
+
 /* CTA Band */
 
 .cta-band {
@@ -1369,7 +1439,7 @@ textarea {
   }
 
   .mobile-menu a{
-    font-size: 1.15rem;
+    font-size: 1.02rem;
     padding: 10px 12px;
     border-radius: 10px;
     color: var(--text);
