@@ -3,179 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How It Works - ShadowOps</title>
-  <meta name="description" content="See how ShadowOps moves from ERP connectivity to AI advisory and approved execution across manufacturing operations.">
-  <meta property="og:title" content="How It Works - ShadowOps">
-  <meta property="og:description" content="Connect ERP data, validate domain models, generate advisory insights, and execute with auditability">
-  <meta property="og:type" content="website">
+  <title>How It Works - ShadowOps ERP</title>
+  <meta name="description" content="See how ShadowOps ERP moves from setup through phased implementation and plant adoption.">
   <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
   <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header-content">
-        <a href="/" class="logo brand">
-          <img src="/assets/img/shadowops-logo.png" alt="ShadowOps">
-          <span>SHADOWOPS</span>
-        </a>
-        <button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">&#9776;</button>
-        <nav class="nav-links" role="navigation">
-          <a href="/product/">Platform</a>
-          <a href="/about/">Company</a>
-          <a href="/contact/">Contact</a>
-          <a href="/contact/" class="btn btn-primary cta-button">Request a Demo</a>
-        </nav>
-        <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true">
-          <div class="panel">
-            <a href="/product/">Platform</a>
-            <a href="/about/">Company</a>
-            <a href="/contact/">Contact</a>
-            <a href="/contact/" class="btn btn-primary cta">Request a Demo</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+  <header><div class="container"><div class="header-content"><a href="/" class="logo brand"><img src="/assets/img/shadowops-logo.png" alt="ShadowOps ERP"><span>SHADOWOPS ERP</span></a><button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">&#9776;</button><nav class="nav-links" role="navigation"><a href="/product/">Platform</a><a href="/manufacturing/">Manufacturing</a><a href="/inventory/">Inventory</a><a href="/quality/">Quality</a><a href="/scheduling/">Scheduling</a><a href="/implementation/">Implementation</a><a href="/pricing/">Pricing</a><a href="/about/">About</a><a href="/contact/">Request Demo</a><a href="/product/" class="btn btn-secondary cta-button">See Platform Overview</a><a href="/pilot/" class="btn btn-primary cta-button">Request Pilot Access</a></nav><div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true"><div class="panel"><a href="/product/">Platform</a><a href="/manufacturing/">Manufacturing</a><a href="/inventory/">Inventory</a><a href="/quality/">Quality</a><a href="/scheduling/">Scheduling</a><a href="/implementation/">Implementation</a><a href="/pricing/">Pricing</a><a href="/about/">About</a><a href="/contact/">Request Demo</a><a href="/product/" class="btn btn-secondary cta">See Platform Overview</a><a href="/pilot/" class="btn btn-primary cta">Request Pilot Access</a></div></div></div></div></header>
 
-  <main class="page how-page">
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1>From ERP Data to Approved Action.</h1>
-          <p class="subhead">ShadowOps connects operational data, normalizes it with shared types, and delivers advisory insights that people approve before anything changes.</p>
-        </div>
-      </div>
-    </section>
+  <main class="page">
+    <section class="hero"><div class="container"><div class="hero-content"><p class="erp-eyebrow">How It Works</p><h1>From setup to plant execution in practical phases.</h1><p class="subhead">ShadowOps ERP is designed for phased implementation so teams can adopt core workflows without overwhelming production.</p></div></div></section>
 
-    <section class="section-divider compact">
-      <div class="container">
-        <div class="signal-band">
-          <p><strong>Principle:</strong> advisory first, human-approved always, with a full audit trail for every action.</p>
-        </div>
-      </div>
-    </section>
+    <section class="section-divider"><div class="container"><h2 class="section-title">Step 1: Foundation</h2><p>Configure company structure, users, plants, customers, items, machines, BOMs, and routings.</p></div></section>
+    <section class="section-divider"><div class="container"><h2 class="section-title">Step 2: Production Pilot</h2><p>Activate scheduling, work orders, and floor execution in a focused plant workflow.</p></div></section>
+    <section class="section-divider"><div class="container"><h2 class="section-title">Step 3: Inventory and Purchasing</h2><p>Connect receiving, allocations, shortages, and supplier visibility to active production.</p></div></section>
+    <section class="section-divider"><div class="container"><h2 class="section-title">Step 4: Quality and Shipping</h2><p>Roll in inspections, holds, corrective actions, and shipment readiness controls.</p></div></section>
+    <section class="section-divider"><div class="container"><h2 class="section-title">Step 5: Optimization</h2><p>Expand to advanced reporting, multi-plant controls, and operational financial visibility.</p></div></section>
 
-    <section class="section-divider">
-      <div class="container">
-        <h2 class="section-title">Phase 1: Connect and Structure</h2>
-        <div class="cards-grid use-cases-grid">
-          <div class="card">
-            <h3>Connect to ERP and plant data</h3>
-            <p>Pull structured records from your existing systems without replacing the source of truth.</p>
-          </div>
-          <div class="card">
-            <h3>Validate with shared types</h3>
-            <p>Zod schemas and TypeScript keep operational records consistent across the stack.</p>
-          </div>
-          <div class="card">
-            <h3>Honor organizational boundaries</h3>
-            <p>Every object is scoped to organization and plant for enterprise control and local autonomy.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-divider">
-      <div class="container">
-        <h2 class="section-title">Phase 2: Advisor Layer</h2>
-        <p class="section-subtitle">Operational context is transformed into AI-guided insights that stay grounded in the record you are viewing.</p>
-        <div class="steps-grid steps-compact">
-          <div class="step">
-            <div class="step-number">1</div>
-            <h3>Record-aware context</h3>
-          </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <h3>Provider-agnostic AI</h3>
-          </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <h3>Tone-coded insight cards</h3>
-          </div>
-          <div class="step">
-            <div class="step-number">4</div>
-            <h3>Audit-ready recommendations</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-divider">
-      <div class="container">
-        <h2 class="section-title">Phase 3: Execute and Prove</h2>
-        <p class="section-subtitle">Users review the recommendation, execute the change they approve, and retain a complete operational history.</p>
-        <div class="screenshots-grid">
-          <article class="screenshot-card">
-            <img class="screenshot-image how-screenshot" src="/assets/img/placeholders/workflows.svg" alt="Work order workflow placeholder" loading="lazy">
-            <div class="content">
-              <h4>Work Orders</h4>
-              <p>Move from list view to detail view and resolve the exception in context.</p>
-            </div>
-          </article>
-          <article class="screenshot-card">
-            <img class="screenshot-image how-screenshot" src="/assets/img/placeholders/ai-advisory.svg" alt="Purchase order advisory placeholder" loading="lazy">
-            <div class="content">
-              <h4>Purchase Orders</h4>
-              <p>Validate supplier risk, receipt history, and vendor recommendations before acting.</p>
-            </div>
-          </article>
-          <article class="screenshot-card">
-            <img class="screenshot-image how-screenshot" src="/assets/img/placeholders/command-center.svg" alt="Command center summary placeholder" loading="lazy">
-            <div class="content">
-              <h4>Command Center</h4>
-              <p>Roll up the result across plants, then drill back into the underlying record.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-divider">
-      <div class="container">
-        <h2 class="section-title">Deployment Paths</h2>
-        <p class="section-subtitle">Run ShadowOps in cloud, on-premise, hybrid, or edge environments without changing the product architecture.</p>
-        <div class="tower-flow">
-          <div class="flow-step">Cloud</div>
-          <div class="flow-step">On-Premise</div>
-          <div class="flow-step">Hybrid</div>
-          <div class="flow-step">Edge</div>
-          <div class="flow-step">Offline Sync</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-band section-divider">
-      <div class="container">
-        <h2>Ready to map your data flow?</h2>
-        <a href="/contact/" class="btn btn-primary btn-large">Request a Demo</a>
-      </div>
-    </section>
+    <section class="cta-band section-divider"><div class="container"><h2>Need an implementation sequence that fits your plant?</h2><a href="/implementation/" class="btn btn-primary btn-large">See Implementation Plan</a></div></section>
   </main>
 
-  <footer>
-    <div class="container">
-      <div>
-        <h4>Product</h4>
-        <a href="/product/">Platform</a>
-        <a href="/how-it-works/">How It Works</a>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <a href="/about/">Company</a>
-        <a href="/contact/">Contact</a>
-      </div>
-      <div>
-        <h4>Resources</h4>
-        <a href="mailto:hello@shadowops.ai">Email</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 ShadowOps. All rights reserved. | <a href="#" style="color: rgba(255,255,255,0.6);">Privacy</a></p>
-    </div>
-  </footer>
-
+  <footer><div class="container"><div><h4>Platform</h4><a href="/product/">Platform</a><a href="/manufacturing/">Manufacturing</a><a href="/scheduling/">Scheduling</a><a href="/inventory/">Inventory</a><a href="/quality/">Quality</a></div><div><h4>Company</h4><a href="/implementation/">Implementation</a><a href="/pricing/">Pricing</a><a href="/about/">About</a><a href="/contact/">Request Demo</a></div><div><h4>Pilot</h4><a href="/pilot/">Pilot Program</a><a href="mailto:hello@shadowops.ai">hello@shadowops.ai</a></div></div><div class="footer-bottom"><p>&copy; 2026 ShadowOps ERP. All rights reserved.</p></div></footer>
   <script src="/scripts/main.js"></script>
 </body>
 </html>
