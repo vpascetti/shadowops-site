@@ -1,6 +1,6 @@
 # ShadowOps Marketing Site
 
-A fast, clean, static marketing site for ShadowOps, the manufacturing operating system. Built with vanilla HTML, CSS, and JavaScript. Production-ready for GitHub Pages.
+A fast, clean, static marketing site for ShadowOps, the manufacturing ERP platform. Built with vanilla HTML, CSS, and JavaScript. Production-ready for GitHub Pages.
 
 **Theme:** Dark mode with electric cyan accents (#14D2F8). Modern, professional design with glowing effects and smooth interactions.
 
